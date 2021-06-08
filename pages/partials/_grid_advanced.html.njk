@@ -1,0 +1,71 @@
+<div class="card__standard">
+  <h4 class="mb-30">Grid with filters</h4>
+  <div class="row">
+    <div class="col-sm">
+      {% include "partials/_filters.html.njk" %}
+      <div class="table-responsive mt-15">
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Status</th>
+              <th scope="col">Order Number</th>
+              <th scope="col">Date</th>
+              <th scope="col">Billing Details</th>
+              <th scope="col" class="ta-r">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <i class="fa fa-exclamation-circle"></i> Information Needed
+              </td>
+              <th scope="row">
+                <button class="mdc-button" href="#">
+                  <span class="mdc-button__label">OR106211</span>
+                </button>
+              </th>
+              <td>3 minutes ago</td>
+              <td>
+                <p>Tango-US</p>
+                <small class="mt-5">4530 Leckron Road, Alameda 95357, United States</small>
+              </td>
+              <td class="ta-r">16.50 USD</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fa fa-exclamation-circle"></i> Information Needed
+              </td>
+              <th scope="row">
+                <button class="mdc-button" href="#">
+                  <span class="mdc-button__label">OR106209</span>
+                </button>
+              </th>
+              <td>2 days ago</td>
+              <td>
+                <p>Koh Refresh</p>
+                <small class="mt-5">190 Block B, Suffolk Street, Texas 902912, United States</small>
+              </td>
+              <td class="ta-r">190.20 USD</td>
+            </tr>
+            <tr>
+              <td>
+                <i class="fa fa-check-circle"></i> Resolved
+              </td>
+              <th scope="row">
+                <button class="mdc-button" href="#">
+                  <span class="mdc-button__label">OR106207</span>
+                </button>
+              </th>
+              <td>May 3rd, 2020</td>
+              <td>
+                <p>Koh Refresh</p>
+                <small class="mt-5">190 Block B, Suffolk Street, Texas 902912, United States</small>
+              </td>
+              <td class="ta-r">190.20 USD</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div></div>

@@ -1,0 +1,125 @@
+<!-- Horizontal Steppers -->
+<div class="row mb-0">
+  <div class="col-md-12">
+
+    <!-- Stepers Wrapper -->
+    <ul class="stepper stepper-horizontal stepper-four">
+
+      <!-- First Step -->
+      <li class="active">
+        <a href="checkout-address.html" class="">
+          <span class="circle">1</span>
+          <span class="label">Address</span>
+          <div class="lines"></div>
+        </a>
+      </li>
+
+      <!-- Third Step -->
+      <li class="active">
+        <a href="checkout-items.html" class="">
+          <span class="circle">2</span>
+          <span class="label">Items</span>
+          <div class="lines"></div>
+        </a>
+      </li>
+
+      <!-- Forth Step -->
+      <li class="active">
+        <a href="checkout-payment.html" class="">
+          <span class="circle">3</span>
+          <span class="label">Pay</span>
+          <div class="lines"></div>
+        </a>
+      </li>
+
+      <!-- Fifth Step -->
+      <li class="inactive">
+        <a href="checkout-review.html" class="">
+          <span class="circle">4</span>
+          <span class="label">Review</span>
+        </a>
+      </li>
+
+    </ul>
+    <!-- /.Stepers Wrapper -->
+
+  </div>
+  <div class="col-md-3">
+
+  </div>
+</div>
+<!-- /.Horizontal Steppers -->
+
+<br>
+<div class="row">
+  <div class="col-lg-9">
+    <div class="p-15">
+      <h4 class="mb-30">Select a payment method</h4>
+      <div class="row radio-boxes">
+        <div class="col-md-12">
+          <div class="well-plain selected">
+            <div class="radio">
+              <input type="radio" name="optradio" class="f-l" checked>
+              <div class="well f-l"><span class="material-icons">account_balance</span></div>
+              <label class="pl-15">Bank of ireland<br><small>Checking •••• 1071</small>
+                <br>
+                <a class="btn btn-link mt-15" href="#">Selected</a>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row radio-boxes">
+        <div class="col-md-12">
+          <div class="well-plain">
+            <div class="radio">
+              <input type="radio" name="optradio" class="f-l mt-5">
+              <img src="images/visa.png" class="">
+              <label class="pl-15">Visa •••• 1071<br><small>Expires 06/23</small>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row radio-boxes">
+        <div class="col-md-12">
+          <div class="well-plain">
+            <div class="radio">
+              <input type="radio" name="optradio" class="f-l mt-5">
+              <img src="images/visa.png" class="">
+              <label class="pl-15">Visa •••• 1071<br><small>Expires 06/23</small>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="well-button">
+            <button class="mdc-button">
+              <div class="mdc-button__ripple"></div>
+              <i class="material-icons mdc-button__icon" aria-hidden="true">add</i>
+              <span class="mdc-button__label">Add payment method</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="well-plain-shadow">
+      <h4>Subtotal (1 item):<br><b>16.50 USD</b></h4>
+      <hr class="mt-15 mb-15">
+      <form class="mt-15">
+        <div class="form-group">
+          <label for="staticEmail" class="form-label">Summary</label>
+          <input type="text" readonly="" class="form-control-plaintext" id="staticEmail"
+            value="1 x Microsoft 365 Business">
+        </div>
+      </form>
+      <button class="mdc-button--raised btn-block mt-0" onclick="location.href = 'checkout-review.html';">
+        <a class="mdc-button__label">Continue</a>
+      </button>
+    </div>
+  </div>
+</div>

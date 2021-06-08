@@ -1,0 +1,62 @@
+<div class="row">
+  <div class="col-sm-8">
+    <div class="card__standard">
+      <h4 class="mb-30">"Shopping" grid</h4>
+      <div class="mdc-data-table">
+        <table class="mdc-data-table__table" aria-label="Dessert calories">
+          <thead>
+            <tr class="mdc-data-table__header-row">
+              <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Name</th>
+              <th class="mdc-data-table__header-cell  customWidthClassQuantity" role="columnheader" scope="col">Quantity
+              </th>
+              <th class="mdc-data-table__header-cell  customWidthClassQuantity mdc-data-table__header-cell--numeric"
+                role="columnheader" scope="col">Price</th>
+              <th class="mdc-data-table__header-cell  customWidthClassQuantity mdc-data-table__header-cell--numeric"
+                role="columnheader" scope="col">Total</th>
+              <th class="mdc-data-table__header-cell  mdc-data-table__header-cell--numeric" role="columnheader"
+                scope="col">
+                Actions</th>
+            </tr>
+          </thead>
+          <tbody class="mdc-data-table__content">
+            <tr class="mdc-data-table__row" id="item-exchange-add">
+              <td class="mdc-data-table__cell ">
+                <p><b>Microsoft 365 Business</b><br><small>61795cab-2abd-43f6-88e9-c9adae5746e0</small></p>
+              </td>
+              <td class="mdc-data-table__cell   mdc-data-table__header-cell--numerisc">
+                <div class="input-group mb-3">
+                  <input type="number" class="form-control" placeholder="Username" aria-label="Username"
+                    aria-describedby="basic-addon1" value="1">
+                </div>
+              </td>
+              <td class="mdc-data-table__cell   mdc-data-table__header-cell--numeric">16.50 USD</td>
+              <td class="mdc-data-table__cell   mdc-data-table__header-cell--numeric">16.50 USD</td>
+              <td class="mdc-data-table__cell ">
+                <button class="mdc-button f-r" onclick="remove_item_subscription()">
+                  <div class="mdc-button__ripple"></div>
+                  <i class="material-icons mdc-button__icon" aria-hidden="true">delete</i>
+                  <span class="mdc-button__label">Remove</span>
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card__standard">
+      <h4>Subtotal (1 item): <b>16.50 USD</b></h4>
+      <hr class='mt-15 mb-15'>
+      <form class="mt-15">
+        <div class="form-group">
+          <label for="staticEmail" class="form-label">Summary</label>
+          <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="1 x Microsoft 365 Business">
+        </div>
+      </form>
+      <button class="mdc-button--raised btn-block mt-0" onclick="location.href = 'checkout-address.html';">
+        <a class="mdc-button__label">Checkout</a>
+      </button>
+    </div>
+  </div>
+</div>

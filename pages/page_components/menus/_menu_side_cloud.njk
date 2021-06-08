@@ -1,0 +1,234 @@
+{# this is a macro, it's a little snippet of reusable nunjucks.
+
+Like a method that you can call: you can pass three parameters:
+fa_icon, link and text. If you pass nothing, no problem default parameters.
+
+{{ sub_menu( icon = 'business',
+             link="index.html",
+             text = "Hello Macro" ) }}  #}
+
+{% macro sub_menu(icon = "business", link = '#', text = "User Management", id = "User_Management") %}
+
+    <li id="{{id}}" class="main-menu__item"  href="{{link}}">
+        <a class="main-menu-action">
+            <span class="material-icons">
+                {{icon}}</span>
+            <span>
+                {{text}}
+            </span>
+        </a>
+    </li>
+
+{% endmacro %}
+
+{% macro sub_menu_parent(icon = "business", link = '#', text = "User Management", id = "User_Management") %}
+
+    <li id="{{id}}" class="main-menu__item" href="{{link}}">
+        <a class="main-menu-action">
+            <span class="material-icons">
+                {{icon}}</span>
+            <span>
+                {{text}}
+            </span>
+            <span class="material-icons" style="padding-left: 10px"> chevron_right </span>
+        </a>
+    </li>
+
+{% endmacro %}
+
+{% macro sub_sub_menu( icon = "fa fa-shopping-cart",
+              link = '#',
+              text = "User Management" ) %}
+    <li class="sub-menu__item" style="color: black;">
+        <a href={{ link }} class="sub-menu-link">
+            {{ text }}
+        </a>
+    </li>
+
+{% endmacro %}
+
+{% macro menu_line_divider() %}
+
+    <li class="main-menu__item main-menu-action line" style="width: 190px; height: 30px;"></li>
+
+{% endmacro %}
+
+{# menu macro ends here #}
+
+<div class="shell-menu" style="display: none;">
+
+    <ul class="main-menu shell-menu-top">
+
+        <li class="" href="#" id="closemenu">
+            <a class="main-menu-action">
+                <span class="material-icons">close</span>Close
+            </a>
+        </li>
+
+        {{ menu_line_divider() }}
+
+        <li class="main-menu__item" href="/new-dashboard">
+            <a class="main-menu-action" href="home.html">
+                <span class="material-icons">home</span>
+                <span>Home</span>
+            </a>
+        </li>
+
+        <li class="main-menu__item" href="/new-dashboard">
+            <a class="main-menu-action" href="insights.html">
+                <span class="material-icons">lightbulb</span>
+                <span>Insights</span>
+            </a>
+        </li>
+
+        <li class="main-menu__item" href="/new-dashboard">
+            <a class="main-menu-action" href="real-time-events.html">
+                <span class="material-icons">feed</span>
+                <span>Events</span>
+            </a>
+        </li>
+
+        {{ menu_line_divider() }}
+
+        <li class="main-menu__item" href="/new-dashboard">
+            <a class="main-menu-action" href="rules.html">
+                <span class="material-icons">shield</span>
+                <span>Security</span>
+            </a>
+        </li>
+
+        <li class="main-menu__item" href="/new-dashboard">
+            <a class="main-menu-action" href="#" id="dropdown-cost">
+                <span class="material-icons">monetization_on</span>
+                <span>Cost</span>
+                <div class="f-r">
+                    <span class="material-icons ml-30">keyboard_arrow_right</span>
+                </div>
+            </a>
+        </li>
+
+        <div class="sub-menu" id="sub-cost" style="display:none;">
+
+            <li class="main-menu__item" href="/new-dashboard">
+                <a class="main-menu-action" href=" ">
+                <span>Spend Reports</span>
+                </a>
+            </li>
+
+            <li class="main-menu__item" href="/new-dashboard">
+                <a class="main-menu-action" href=" ">
+                <span>Budgets</span>
+                </a>
+            </li>
+
+            <li class="main-menu__item" href="/new-dashboard">
+                <a class="main-menu-action" href=" ">
+                <span>Billing</span>
+                </a>
+            </li>
+
+            <li class="main-menu__item" href="/new-dashboard">
+                <a class="main-menu-action" href=" ">
+                <span>Chargebacks</span>
+                </a>
+            </li>
+        </div>
+
+
+        <li class="main-menu__item" href="/new-dashboard">
+            <a class="main-menu-action" href="#" id="dropdown-util">
+                <span class="material-icons">data_usage</span>
+                <span>Usage</span>
+                <div class="f-r">
+                    <span class="material-icons ml-30">keyboard_arrow_right</span></div>
+            </a>
+        </li>
+
+        <div class="sub-menu" id="sub-util" style="display:none;">
+            <li class="main-menu__item" href="/new-dashboard">
+                <a class="main-menu-action" href=" ">
+                    <span>IaaS/PaaS utilization</span>
+                </a>
+            </li>
+
+            <li class="main-menu__item" href="/new-dashboard">
+                <a class="main-menu-action" href=" ">
+                <span>Reserved Instance</span>
+                </a>
+            </li>
+
+            <li class="main-menu__item" href="/new-dashboard">
+                <a class="main-menu-action" href=" ">
+                    <span>365 Analytics</span>
+                </a>
+            </li>
+
+            <li class="main-menu__item mb-15" href="/new-dashboard">
+                <a class="main-menu-action" href=" ">
+                    <span>Team Challenge</span>
+                </a>
+            </li>
+        </div>
+
+        {{ menu_line_divider() }}
+
+        <li class="main-menu__item" href="/new-dashboard">
+            <a class="main-menu-action" href="#" id="dropdown-menu-2">
+                <span class="material-icons">cloud</span>
+                <span>Infrastructure</span>
+                <div class="f-r">
+                <span class="material-icons ml-30">keyboard_arrow_right</span></div>
+            </a>
+        </li>
+
+        <div class="sub-menu" id="sub-menu-2" style="display: none;">
+            <li class="main-menu__item" href="/new-dashboard">
+                <a class="main-menu-action" href="resources.html">
+                    <span> Resources</span>
+                </a>
+            </li>
+
+            <li class="main-menu__item" href="/new-dashboard">
+                <a class="main-menu-action" href="tags.html">
+                    <span>Tags</span>
+                </a>
+            </li>
+
+            <li class="main-menu__item" href="/new-dashboard">
+                <a class="main-menu-action" href="groups.html">
+                    <span>Custom Groups</span>
+                </a>
+            </li>
+
+            <li class="main-menu__item" href="/new-dashboard">
+                <a class="main-menu-action" href="rules.html">
+                    <span>Rules</span>
+                </a>
+            </li>
+
+            <li class="main-menu__item" href="/new-dashboard">
+                <a class="main-menu-action" href="rules.html">
+                    <span>Scheduled Exports</span>
+                </a>
+            </li>
+
+        </div>
+
+        <div style="position: absolute; bottom: 0;">
+
+             {{ menu_line_divider() }}
+
+            <li class="main-menu__item mb-15" href="/new-dashboard">
+                <a class="main-menu-action" href="#" id="dropdown-menu-2">
+                    <a class="main-menu-action" href="settings.html">
+                        <span class="material-icons">settings</span>
+                        <span>Account Settings</span>
+                    </a>
+
+                </a>
+            </li>
+        </div>
+
+    </ul>
+
+</div>

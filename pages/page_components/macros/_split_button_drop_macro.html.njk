@@ -1,0 +1,25 @@
+<!-- Split button -->
+{% macro butt( name = 'Default',
+               btn_class = "btn-default",
+               items = [{ link: "#", name: "Action" },
+                        { link: "#", name: "Action 2" }],
+               sep = true,
+               sep_item = { link: "#", name: "A final item"},
+               id = "split-btn-1" ) %}
+    <div class="btn-group" id="{{ id }}">
+        <button type="button" class="btn {{ btn_class }}"> {{ name }}</button>
+        <button type="button" class="btn {{ btn_class }} dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="caret"></span>
+            <span class="sr-only">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+            {% for item in items%}
+                <li><a href="{{ item.link }}">{{ item.name }}</a></li>
+            {% endfor %}
+            {% if sep %}
+                <li role="separator" class="divider"></li>
+                <li><a href="{{ sep_item.link }}">{{ sep_item.name }}</a></li>
+            {% endif %}
+        </ul>
+    </div>
+{% endmacro %}

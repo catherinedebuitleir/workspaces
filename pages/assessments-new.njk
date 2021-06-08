@@ -1,0 +1,138 @@
+{# page variables #}
+{% set page_title = "FinOps Assesment" %}
+
+{% extends "index_account.njk"%}
+
+{% block content %}
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div id="breadcrumb" class="mb-10" style="padding-left: 0px; margin-top: 30px;">
+        <span class="youarehere"></span>
+        <span class="breadcrumb-text">
+          <a href="index.html" class="breadcrumb-active"></a>
+          <span class="breadcrumb-text">
+            <a href="master_page_location" class="breadcrumb-active">
+              {{master_page_name}}</a>/
+            <span class="breadcrumb-current-page">
+              {{page_title}}
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
+    {% include "partials/_page_actions.njk" %}
+
+<div class="row mb-5">
+  <div class="col-sm-3">
+    <div class="card__standard menu_items">
+      <h4 class="mb-3">Workflow</h4>
+      <div class="overflow-auto">
+        <ul class="list-group">
+          <li class="list-group-item list-group-item-action">Introduction <span
+              class="material-icons complete">check_circle</span></li>
+          <li class="list-group-item list-group-item-action">General <span
+              class="material-icons complete">check_circle</span></li>
+          <li class="list-group-item list-group-item-action active">Entitlements <span
+              class="material-icons complete">check_circle</span></li>
+          <li class="list-group-item list-group-item-action active">Report Renewals <span
+              class="material-icons complete">check_circle</span></li>
+          <li class="list-group-item list-group-item-action active">HW Configuration <span
+              class="material-icons complete">check_circle</span></li>
+          <li class="list-group-item list-group-item-action active">HW Measurement <span
+              class="material-icons complete">check_circle</span></li>
+          <li class="list-group-item list-group-item-action active">Systems <span
+              class="material-icons complete">check_circle</span></li>
+          <li class="list-group-item list-group-item-action active">Discovery Scan <span
+              class="material-icons complete">check_circle</span></li>
+          <li class="list-group-item list-group-item-action active">Database <span
+              class="material-icons complete">check_circle</span></li>
+          <li class="list-group-item list-group-item-action active">DB Measurement <span
+              class="material-icons complete">check_circle</span></li>
+          <li class="list-group-item list-group-item-action active">DR Strategy <span
+              class="material-icons complete">check_circle</span></li>
+          <li class="list-group-item list-group-item-action active">ATG <span
+              class="material-icons complete">check_circle</span></li>
+          <li class="list-group-item list-group-item-action active">AutoVue <span
+              class="material-icons complete">check_circle</span></li>
+          <li class="list-group-item list-group-item-action active">BI Applications <span
+              class="material-icons complete">check_circle</span></li>
+          <li class="list-group-item list-group-item-action active">Data Integration <span
+              class="material-icons complete">check_circle</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-9">
+    <div class="card__standard">
+    <h3 class="mb-4">General <small class=" float-right">4 / 4</small></h3>
+    <label>Has your company gone through a License Audit or License Review in the past?
+    </label>
+    <div class="radio-buttons" id="exampleRadios2">
+      <input class="" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
+      <label class="" for="exampleRadios1">
+        Yes
+      </label>
+    </div>
+    <div class="radio-buttons" id="exampleRadios2">
+      <input class="" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+      <label class="" for="exampleRadios2">
+        No
+      </label>
+    </div>
+    <br>
+    <label class="mt-15">Do you use more than one data center?
+    <a class="btn btn-link" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+      Learn more
+    </a>
+    <div class="collapse" id="collapseExample">
+      <div class=""><p><small>
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </small></p></div>
+    </div>
+    </label>
+    <div class="radio-buttons" id="exampleRadios3">
+      <input class="" type="radio" name="exampleRadios1" id="exampleRadios3" value="option1" checked="">
+      <label class="" for="">
+        Yes
+      </label>
+    </div>
+    <div class="radio-buttons" id="exampleRadios3">
+      <input class="" type="radio" name="exampleRadios1" id="exampleRadios3" value="option2">
+      <label class="" for="">
+        No
+      </label>
+    </div>
+    <form class="mt-15">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Please specify the number of full-time, part-time
+          and temporary employees within your organization.
+          </label>
+        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="0"
+          value="120">
+      </div>
+    </form>
+    <form class="mt-5">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Please specify the number of agents, contractors and
+          consultants within your organization.
+          </label>
+        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="0"
+          value="120">
+      </div>
+    </form>
+    <br>
+    <a type="button" class="btn btn-default mt-5" href="#">Previous</a>
+    <a type="button" class="btn btn-primary float-right mt-5" href="#">Next</a>
+  </div>
+</div>
+
+<div id="ask-questions">
+  <div id="ask-questions-box">
+    <div id="header">
+      <h5><span class="material-icons">chat_bubble</span> Ask a question</h5>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

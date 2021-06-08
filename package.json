@@ -1,0 +1,23 @@
+{
+  "name": "swo_gulp_4_nunjucks",
+  "version": "1.0.0",
+  "description": "gulp 4 nunjucks on node v14 LTS",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cache-bust": "^1.4.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-filter": "^7.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-nunjucks-render": "^2.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tony Cronin",
+  "license": "ISC"
+}

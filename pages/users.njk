@@ -1,0 +1,159 @@
+{# page variables #}
+{% set page_title = "Users" %}
+
+{% extends "index_account.njk"%}
+
+{% block content %}
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div id="breadcrumb" class="mb-10" style="padding-left: 0px; margin-top: 30px;">
+        <span class="youarehere"></span>
+        <span class="breadcrumb-text">
+          <a href="index.html" class="breadcrumb-active"></a>
+          <span class="breadcrumb-text">
+            <a href="master_page_location" class="breadcrumb-active">
+              {{master_page_name}}</a>/
+            <span class="breadcrumb-current-page">
+              {{page_title}}
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
+    {% include "partials/_page_actions.njk" %}
+  </div>
+  <div class="card__standard">
+    <button class="mdc-button--raised mt-0  mt-15" onclick="#">
+      <a class="mdc-button__label">Add New User</a>
+    </button>
+    <div class="mdc-data-table mt-30">
+      <table class="mdc-data-table__table" aria-label="Dessert calories">
+        <thead>
+          <tr class="mdc-data-table__header-row">
+            <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Name</th>
+            <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Email</th>
+            <th class="mdc-data-table__header-cell  customWidthClassQuantity" role="columnheader" scope="col">Role
+          </th>
+            <th class="mdc-data-table__header-cell  mdc-data-table__header-cell--numeric" role="columnheader" scope="col">
+            Actions</th>
+          </tr>
+        </thead>
+        <tbody class="mdc-data-table__content">
+          <tr class="mdc-data-table__row" id="item-exchange-add">
+            <td class="mdc-data-table__cell ">
+              <p>
+                <b>Brian Welsh</b>
+              </p>
+            </td>
+            <td class="mdc-data-table__cell ">
+            brian.welsh@adastraflex.com
+          </td>
+            <td class="mdc-data-table__cell">Admin</td>
+            <td class="mdc-data-table__cell ">
+              <button class="mdc-button f-r" onclick="remove_item_subscription()">
+                <div class="mdc-button__ripple"></div>
+                <i class="material-icons mdc-button__icon" aria-hidden="true">edit</i>
+                <span class="mdc-button__label">Edit</span>
+              </button>
+            </td>
+          </tr>
+          <tr class="mdc-data-table__row" id="item-exchange-add">
+            <td class="mdc-data-table__cell ">
+              <p>
+                <b>Brian Welsh</b>
+              </p>
+            </td>
+            <td class="mdc-data-table__cell ">
+            brian.welsh@adastraflex.com
+          </td>
+            <td class="mdc-data-table__cell">Admin</td>
+            <td class="mdc-data-table__cell ">
+              <button class="mdc-button f-r" onclick="remove_item_subscription()">
+                <div class="mdc-button__ripple"></div>
+                <i class="material-icons mdc-button__icon" aria-hidden="true">edit</i>
+                <span class="mdc-button__label">Edit</span>
+              </button>
+            </td>
+          </tr>
+
+          <tr class="mdc-data-table__row" id="item-exchange-add">
+            <td class="mdc-data-table__cell ">
+              <p>
+                <b>Brian Welsh</b>
+              </p>
+            </td>
+            <td class="mdc-data-table__cell ">
+            brian.welsh@adastraflex.com
+          </td>
+            <td class="mdc-data-table__cell">Admin</td>
+            <td class="mdc-data-table__cell ">
+              <button class="mdc-button f-r" onclick="remove_item_subscription()">
+                <div class="mdc-button__ripple"></div>
+                <i class="material-icons mdc-button__icon" aria-hidden="true">edit</i>
+                <span class="mdc-button__label">Edit</span>
+              </button>
+            </td>
+          </tr>
+          <tr class="mdc-data-table__row" id="item-exchange-add">
+            <td class="mdc-data-table__cell ">
+              <p>
+                <b>Brian Welsh</b>
+              </p>
+            </td>
+            <td class="mdc-data-table__cell ">
+            brian.welsh@adastraflex.com
+          </td>
+            <td class="mdc-data-table__cell">Admin</td>
+            <td class="mdc-data-table__cell ">
+              <button class="mdc-button f-r" onclick="remove_item_subscription()">
+                <div class="mdc-button__ripple"></div>
+                <i class="material-icons mdc-button__icon" aria-hidden="true">edit</i>
+                <span class="mdc-button__label">Edit</span>
+              </button>
+            </td>
+          </tr>
+
+          <tr class="mdc-data-table__row" id="item-exchange-add">
+            <td class="mdc-data-table__cell ">
+              <p>
+                <b>Brian Welsh</b>
+              </p>
+            </td>
+            <td class="mdc-data-table__cell ">
+            brian.welsh@adastraflex.com
+          </td>
+            <td class="mdc-data-table__cell">Admin</td>
+            <td class="mdc-data-table__cell ">
+              <button class="mdc-button f-r" onclick="remove_item_subscription()">
+                <div class="mdc-button__ripple"></div>
+                <i class="material-icons mdc-button__icon" aria-hidden="true">edit</i>
+                <span class="mdc-button__label">Edit</span>
+              </button>
+            </td>
+          </tr>
+          <tr class="mdc-data-table__row" id="item-exchange-add">
+            <td class="mdc-data-table__cell ">
+              <p>
+                <b>Brian Welsh</b>
+              </p>
+            </td>
+            <td class="mdc-data-table__cell ">
+            brian.welsh@adastraflex.com
+          </td>
+            <td class="mdc-data-table__cell">Admin</td>
+            <td class="mdc-data-table__cell ">
+              <button class="mdc-button f-r" onclick="remove_item_subscription()">
+                <div class="mdc-button__ripple"></div>
+                <i class="material-icons mdc-button__icon" aria-hidden="true">edit</i>
+                <span class="mdc-button__label">Edit</span>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

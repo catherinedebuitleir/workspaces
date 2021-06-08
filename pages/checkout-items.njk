@@ -1,0 +1,40 @@
+{% set page_actions = false %}
+
+{# page layout #}
+<head>
+  {% block header %}
+    {% include "./page_components/_head.html.njk" %}
+  {% endblock %}
+</head>
+<body>
+<div class="shell-container checkout">
+  <div class="content-container"></div>
+
+  {% include "./page_components/_top_nav_buying.html.njk" %}
+  {% include "./page_components/menus/_menu_side_marketplace.njk" %}
+
+  <section class="gap"></section>
+  <div class="container">
+
+    {% include "./page_components/_header.html.njk"%}
+
+      <div class="row">
+      <!-- This is where the page begins -->
+        <div class="card">
+
+          {% block content %}
+            {# any content goes here #}
+
+            {% include "partials/_checkout_items.html.njk" %}
+
+          {% endblock %}
+
+        </div>
+      </div>
+    </div>
+
+    {% include "./page_components/_footer.html.njk" %}
+
+</div>
+</body>
+{% include "./page_components/_scripts.html.njk" %}

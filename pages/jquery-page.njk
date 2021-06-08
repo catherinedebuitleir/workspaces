@@ -1,0 +1,63 @@
+{# page variables #}
+{% set page_title = "Cheatsheet" %}
+{% set page_location = "Home /" %}
+{% set page_actions = false %}
+
+{# page layout #}
+<head>
+  {% block header %}
+    {% include "./page_components/_head.html.njk" %}
+  {% endblock %}
+</head>
+<body>
+<div class="shell-container">
+  <div class="content-container"></div>
+
+  {% include "./page_components/_top_nav.html.njk" %}
+  {% include "./page_components/menus/_menu_side_marketplace.njk" %}
+
+  <section class="gap"></section>
+  <div class="">
+
+    {% include "./page_components/_header.html.njk"%}
+
+      <div class="row">
+      <!-- This is where the page begins -->
+        <div class="card">
+
+          {% block content %}
+          {# any content goes here #}
+
+          <div class="card__standard">
+            <p class="mb-15">If you want an element that is not a button to navigate the user then use code.</p>
+            <div class="well">onclick="location.href='index.html;"</div>
+            <p class="mb-15 mt-30">On click make something happen</p>
+            <div class="well">
+            $("#idofelement").click(function(){<br><br>
+            });
+            </div>
+            <p class="mb-15 mt-30">Show or hide an element</p>
+            <div class="well">
+            $(".classofelement").show();<br><br>
+            $(".classofelement").hide();<br><br>
+            $(".classofelement").toggle();
+            </div>
+            <p class="mb-15 mt-30">On change of a dropdown make something happen</p>
+            <div class="well">
+            $(".classofelement").change(function(){<br><br>
+            }
+            </div>
+
+          </div>
+
+          {% endblock %}
+
+        </div>
+      </div>
+    </div>
+
+    {% include "./page_components/_footer.html.njk" %}
+
+</div>
+</body>
+{% include "./page_components/_scripts.html.njk" %}

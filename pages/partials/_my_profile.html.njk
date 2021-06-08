@@ -1,0 +1,223 @@
+<div class="customer-profile">
+  <div class="card__standard profile-readonly">
+    <div class="row">
+      <div class="col-sm-6">
+        <h4 class="card__standard_headline">My Account</h4>
+      </div>
+      <div class="col-sm-6">
+        <button class="mdc-button f-r" onclick="editmode_customer()">
+          <div class="mdc-button__ripple"></div>
+          <i class="material-icons mdc-button__icon" aria-hidden="true">edits</i>
+          <span class="mdc-button__label">Edit</span>
+        </button>
+      </div>
+    </div>
+    <div class="row mb-30">
+      <div class="col-sm-6">
+        <form>
+          <div class="custom-file f-l mt-15">
+            <input type="file" class="custom-file-input" id="customFile">
+            <label class="custom-file-label" for="customFile">Choose file</label>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-6">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="row">
+          <div class="col-sm-4">
+            <form>
+              <div class="form-group">
+                <label for="staticEmail" class="form-label">Name</label>
+                <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="Will Smith">
+              </div>
+            </form>
+          </div>
+          <div class="col-sm-4">
+            <form>
+              <div class="form-group">
+                <label for="staticEmail" class="form-label">Email</label>
+                <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="will.smith@adastraflex.com">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <form>
+              <div class="form-group">
+                <label for="staticEmail" class="form-label">Phone</label>
+                <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="9910900848">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="row">
+          <div class="col-sm-12">
+            <form>
+              <div class="form-group">
+                <label for="staticEmail" class="form-label">Address</label>
+                <input type="text" readonly="" class="form-control-plaintext pb-0" id="staticEmail" value="4530 Leckron Road">
+                <input type="text" readonly="" class="form-control-plaintext p-0" id="staticEmail" value="Alameda">
+                <input type="text" readonly="" class="form-control-plaintext p-0" id="staticEmail" value="Georgia 95357">
+                <input type="text" readonly="" class="form-control-plaintext p-0" id="staticEmail" value="United Stated">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="card__standard profile-edit" style="display: none;">
+    <div class="row mb-30">
+      <div class="col-sm-6">
+        <div class="profile-photo-update">
+          <span class="material-icons" id="user_image">account_circle</span>
+        </div>
+        <form>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="customFile">
+            <label class="custom-file-label" for="customFile">Choose file</label>
+          </div>
+        </form>
+      </div>
+      <div class="col-sm-6">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="row">
+          <div class="col-sm-4">
+            <label class="mdc-text-field mdc-text-field--outlined">
+              <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id" value="Will Smith">
+              <span class="mdc-notched-outline">
+                <span class="mdc-notched-outline__leading"></span>
+                <span class="mdc-notched-outline__notch">
+                  <span class="mdc-floating-label" id="my-label-id"></span>
+                </span>
+                <span class="mdc-notched-outline__trailing"></span>
+              </span>
+            </label>
+          </div>
+          <div class="col-sm-4">
+            <label class="mdc-text-field mdc-text-field--outlined">
+              <input type="text" class="mdc-text-field__input input-md" aria-labelledby="my-label-id" value="will.smith@adastraflex.com">
+              <span class="mdc-notched-outline">
+                <span class="mdc-notched-outline__leading"></span>
+                <span class="mdc-notched-outline__notch">
+                  <span class="mdc-floating-label" id="my-label-id"></span>
+                </span>
+                <span class="mdc-notched-outline__trailing"></span>
+              </span>
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <label class="mdc-text-field mdc-text-field--outlined">
+              <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id" value="9910900848">
+              <span class="mdc-notched-outline">
+                <span class="mdc-notched-outline__leading"></span>
+                <span class="mdc-notched-outline__notch">
+                  <span class="mdc-floating-label" id="my-label-id"></span>
+                </span>
+                <span class="mdc-notched-outline__trailing"></span>
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="row">
+          <div class="col-sm-12">
+            <form>
+              <div class="form-group">
+                <label class="mdc-text-field mdc-text-field--outlined input-100">
+                  <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id" value="530 Leckron Road">
+                  <span class="mdc-notched-outline">
+                    <span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch">
+                      <span class="mdc-floating-label" id="my-label-id"></span>
+                    </span>
+                    <span class="mdc-notched-outline__trailing"></span>
+                  </span>
+                </label>
+                <label class="mdc-text-field mdc-text-field--outlined input-100">
+                  <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id" value="Alameda">
+                  <span class="mdc-notched-outline">
+                    <span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch">
+                      <span class="mdc-floating-label" id="my-label-id"></span>
+                    </span>
+                    <span class="mdc-notched-outline__trailing"></span>
+                  </span>
+                </label>
+                <label class="mdc-text-field mdc-text-field--outlined input-100">
+                  <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id" value="Georgia">
+                  <span class="mdc-notched-outline">
+                    <span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch">
+                      <span class="mdc-floating-label" id="my-label-id"></span>
+                    </span>
+                    <span class="mdc-notched-outline__trailing"></span>
+                  </span>
+                </label>
+                <label class="mdc-text-field mdc-text-field--outlined">
+                  <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id" value="95357">
+                  <span class="mdc-notched-outline">
+                    <span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch">
+                      <span class="mdc-floating-label" id="my-label-id"></span>
+                    </span>
+                    <span class="mdc-notched-outline__trailing"></span>
+                  </span>
+                </label>
+                <label class="mdc-text-field mdc-text-field--outlined input-100">
+                  <input type="text" class="mdc-text-field__input" aria-labelledby="my-label-id" value="United Stated">
+                  <span class="mdc-notched-outline">
+                    <span class="mdc-notched-outline__leading"></span>
+                    <span class="mdc-notched-outline__notch">
+                      <span class="mdc-floating-label" id="my-label-id"></span>
+                    </span>
+                    <span class="mdc-notched-outline__trailing"></span>
+                  </span>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-15">
+      <div class="col-sm-12">
+        <button class="mdc-button--raised" onclick="editmode_customer()">
+          <a class="mdc-button__label">Save Changes</a>
+        </button>
+        <button class="mdc-button--outlined ml-15" onclick="editmode_customer()">
+          <div class="mdc-button__ripple"></div>
+          <span class="mdc-button__label">Cancel</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="card__standard reset-password mt-15">
+  <div class="row">
+    <div class="col-sm-7">
+      <span class="material-icons key-icon f-l mr-30">vpn_key</span>
+      <h4 class="card__standard_headline">Change password</h4>
+      <p class="explainer">Reset a password on behalf of your customer.</p>
+    </div>
+    <div class="col-sm-5">
+      <button class="mdc-button--raised f-r" href="#">
+        <a class="mdc-button__label">Reset Password</a>
+      </button>
+    </div>
+  </div>
+</div>

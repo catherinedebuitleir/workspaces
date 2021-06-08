@@ -1,0 +1,54 @@
+<div class="row filters tag-filter--selected" style="display: none;">
+  <div class="col-lg-2">
+    <p><label>Filter by</label></p>
+  </div>
+  <div class="col-lg-3">
+    <div class="form-group">
+      <select class="form-control btn-filter" id="sel1" placeholder="Property">
+        <option value="" disabled selected hidden>Tag</option>
+        <option>Country</option>
+        <option>City</option>
+        <option>Server</option>
+        <option>Tag</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-sm-2">
+    <div class="form-group">
+      <select class="form-control btn-filter" id="sel1" placeholder="Property">
+        <option>contains</option>
+        <option selected>equals</option>
+        <option>does not equal</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-sm-3">
+    <div class="form-group">
+      <select class="form-control btn-filter" id="sel1" placeholder="Property">
+        <option value="" disabled selected hidden>Value</option>
+        <option>env_</option>
+        <option>loc_</option>
+        <option>company_</option>
+      </select>
+    </div>
+  </div>
+  <div class="col-sm-1 delete-filter">
+    <span class="material-icons" onclick="delete_tag_filter()">close</span>
+  </div>
+</div>
+<div class="row filters">
+  <div class="col-lg-1" style="padding-left: 0px;">
+    <p id="filter-label"><label>Filter by</label></p>
+  </div>
+  <div class="col-lg-3">
+    <div class="form-group">
+      <select class="form-control btn-filter" id="sel1" placeholder="Property" onclick="add_tag_filter()">
+        <option value="" disabled selected hidden>Select filter</option>
+        <option>Country</option>
+        <option>City</option>
+        <option>Server</option>
+        <option>Tags</option>
+      </select>
+    </div>
+  </div>
+</div>

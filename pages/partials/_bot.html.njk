@@ -1,0 +1,57 @@
+<div class="chatbot">
+<div id="chatboxes" style="display: none;">
+  <div class="scrollable">
+    <div class="header">
+      <div class="row">
+        <div class="col-lg-2">
+          <div class="circle-ava"><img src="images/download.png" class="respsonsive avatar"></div>
+        </div>
+        <div class="col-lg-7" style="margin-left: -10px;">
+          <h4>PyraBot</h4>
+          <p><small>Virtual Assistant</small></p>
+        </div>
+        <div class="col-lg-3">
+          
+        </div>
+      </div>
+    </div>
+    <div class="chatwindow">
+        <p id="datetime">THURSDAY, OCTOBER 8, 2020</p>
+        <div class="">
+          <div class="comment-by-bot">
+            Hello 👋<br><br>
+            What would you like to do today?
+          </div>
+        </div>
+        <div class="end">
+        </div>
+    </div>
+    <div class="suggestionwindow">
+        <a class="btn btn-default" id="buyproduct" onclick="buy()">Buy a product</a>
+        <a class="btn btn-default mr-15" id="trackorder"  onclick="track()">Track an order</a>
+        <a class="btn btn-default" id="reportproblem"  onclick="report()">Report a problem</a>
+        <a class="btn btn-default mr-15" id="findsomething"  onclick="find()">Find something</a>
+        <div class="end-suggestions">
+        </div>
+    </div>
+  </div>
+  <div class="typewindow">
+    <div class="row">
+      <div class="col-sm-11">
+        <!-- Basic -->
+        <div class="input-group mb-0 w-100">
+          <input type="text" class="form-control" aria-describedby="basic-addon1" placeholder="Type a message...">
+        </div>
+      </div>
+      <div class="col-sm-1">
+        <i class="fa fa-paper-plane"></i>
+      </div>
+    </div>
+
+  </div>
+</div>
+  <a class="circle" id="comment" href="">
+    <i class="fa fa-comment" id="bubble"></i>
+    <i class="fa fa-times pl-5" id="close" style="display: none;"></i>
+  </a>
+</div>

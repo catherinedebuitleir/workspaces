@@ -1,0 +1,18 @@
+{# you can call a macro by
+    {% import "macros/_page_tiles_macro.html.njk" as ptile %}
+    now call it:
+        {{ ptile.tile( name = 'PO Requested',
+            value = "1", fa_class = "fa fa-shopping-cart",
+            tile_class = "tile_warn" ) }}  #}
+
+{% macro sub_menu( icon = "apps",
+              link = '#',
+              text = "User Management" ) %}
+
+<li class="sub-menu__item">
+              <a href = {{ link }} class="sub-menu-link">
+                <span class="material-icons">{{icon}}</span>
+                <span>{{text}}</span>
+              </a>
+            </li>
+{% endmacro %}

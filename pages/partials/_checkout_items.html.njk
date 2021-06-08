@@ -1,0 +1,112 @@
+<!-- Horizontal Steppers -->
+<div class="row mb-0">
+  <div class="col-md-12">
+
+    <!-- Stepers Wrapper -->
+    <ul class="stepper stepper-horizontal stepper-four">
+
+      <!-- First Step -->
+      <li class="active">
+        <a href="checkout-address.html" class="">
+          <span class="circle">1</span>
+          <span class="label">Address</span>
+          <div class="lines"></div>
+        </a>
+      </li>
+
+      <!-- Third Step -->
+      <li class="active">
+        <a href="#!" class="">
+          <span class="circle">2</span>
+          <span class="label">Items</span>
+          <div class="lines"></div>
+        </a>
+      </li>
+
+      <!-- Forth Step -->
+      <li class="inactive">
+        <a href="#!" class="">
+          <span class="circle">3</span>
+          <span class="label">Pay</span>
+          <div class="lines"></div>
+        </a>
+      </li>
+
+      <!-- Fifth Step -->
+      <li class="inactive">
+        <a href="#!" class="">
+          <span class="circle">4</span>
+          <span class="label">Review</span>
+        </a>
+      </li>
+
+    </ul>
+    <!-- /.Stepers Wrapper -->
+
+  </div>
+  <div class="col-md-3">
+
+  </div>
+</div>
+<!-- /.Horizontal Steppers -->
+<br>
+<div class="row p-15">
+  <div class="col-lg-9">
+    <h4 class="mb-30">Review items (1)</h4>
+    <div class="mr-15">
+      <table class="mdc-data-table__table" aria-label="Dessert calories">
+        <thead>
+          <tr class="mdc-data-table__header-row">
+            <th class="mdc-data-table__header-cell" role="columnheader" scope="col">Name</th>
+            <th class="mdc-data-table__header-cell  customWidthClassQuantity" role="columnheader" scope="col">Qty
+            </th>
+            <th class="mdc-data-table__header-cell  customWidthClassQuantity mdc-data-table__header-cell--numeric"
+              role="columnheader" scope="col">Price</th>
+            <th class="mdc-data-table__header-cell  customWidthClassQuantity mdc-data-table__header-cell--numeric"
+              role="columnheader" scope="col">Total</th>
+            <th class="mdc-data-table__header-cell  mdc-data-table__header-cell--numeric" role="columnheader"
+              scope="col">
+              Actions</th>
+          </tr>
+        </thead>
+        <tbody class="mdc-data-table__content">
+          <tr class="mdc-data-table__row" id="item-exchange-add">
+            <td class="mdc-data-table__cell ">
+              <p><b>Microsoft 365 Business</b><br><small>61795cab-2abd-43f6-88e9-c9adae5746e0</small></p>
+            </td>
+            <td class="mdc-data-table__cell   mdc-data-table__header-cell--numerisc">
+              <div class="input-group mb-3">
+                <input type="number" class="form-control" placeholder="Username" aria-label="Username"
+                  aria-describedby="basic-addon1" value="1">
+              </div>
+            </td>
+            <td class="mdc-data-table__cell   mdc-data-table__header-cell--numeric">16.50 USD</td>
+            <td class="mdc-data-table__cell   mdc-data-table__header-cell--numeric">16.50 USD</td>
+            <td class="mdc-data-table__cell ">
+              <button class="mdc-button f-r" onclick="remove_item_subscription()">
+                <div class="mdc-button__ripple"></div>
+                <i class="material-icons mdc-button__icon" aria-hidden="true">delete</i>
+                <span class="mdc-button__label">Remove</span>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="well-plain-shadow">
+      <h4>Subtotal (1 item):<br><b>16.50 USD</b></h4>
+      <hr class="mt-15 mb-15">
+      <form class="mt-15">
+        <div class="form-group">
+          <label for="staticEmail" class="form-label">Summary</label>
+          <input type="text" readonly="" class="form-control-plaintext" id="staticEmail" value="1 x Microsoft 365 Business">
+        </div>
+      </form>
+      <button class="mdc-button--raised btn-block mt-0" onclick="location.href = 'checkout-payment.html';">
+        <a class="mdc-button__label">Continue</a>
+      </button>
+    </div>
+  </div>
+</div>

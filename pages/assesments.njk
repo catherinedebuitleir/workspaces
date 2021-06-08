@@ -1,0 +1,54 @@
+{# page variables #}
+{% set page_title = "Assesments" %}
+
+{% extends "index_account.njk"%}
+
+{% block content %}
+
+  <div class="row">
+    <div class="col-sm-6">
+      <div id="breadcrumb" class="mb-10" style="padding-left: 0px; margin-top: 30px;">
+        <span class="youarehere"></span>
+        <span class="breadcrumb-text">
+          <a href="index.html" class="breadcrumb-active"></a>
+          <span class="breadcrumb-text">
+            <a href="master_page_location" class="breadcrumb-active">
+              {{master_page_name}}</a>/
+            <span class="breadcrumb-current-page">
+              {{page_title}}
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
+    {% include "partials/_page_actions.njk" %}
+  </div>
+
+  <div class="row">
+    <div class="col-sm">
+      <div class="card__standard">
+        <h3 class="card__standard_headline">FinOps Assessment</h3>
+        <div class="progress">
+          <div class="progress-bar bg-success" role="progressbar" style="width: 8%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <p class="mt-5">
+          <small>1 / 11 sections</small>
+        </p>
+        <button class="mdc-button--outlined mt-15" href="assessments-new.html">
+          <a href="assessments-new.html" class="mdc-button__label">Resume</a>
+        </button>
+      </div>
+    </div>
+    <div class="col-sm">
+      <div class="card__standard">
+        <h3 class="card__standard_headline">The Diagnostic</h3>
+        <p class="mt-5">
+          <b>Your results are ready to analyze!</b><br>You can check out your answers here <a class="btn btn-link" href="#">view answers</a>.</p>
+        <button class="mdc-button--raised mt-15 mr-15">
+          <a class="mdc-button__label">View Report</a>
+        </button>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

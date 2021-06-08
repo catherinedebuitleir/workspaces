@@ -1,0 +1,26 @@
+{# you can call a macro by
+    {% import "macros/_page_tiles_macro.html.njk" as ptile %}
+    now call it:
+        {{ ptile.tile( name = 'PO Requested',
+            value = "1", fa_class = "fa fa-shopping-cart",
+            tile_class = "tile_warn" ) }}  #}
+
+{% macro tile( name = "invoices",
+               value = '12', id_ref = 'tile_1',
+               fa_class = 'fas fa-edit',
+               tile_class = 'tile_info', link = '#' ) %}
+{# set the class of tiles #}
+{% set all_class = "col-lg-2 col-md-4 col-sm-4 col-xs-6 tiles margin-packer" %}
+
+<a href = {{ link }}>
+    <div class="{{ all_class}}" href="#"
+    id="{{ id_ref }}" href="#" title=" " rel=" ">
+        <div class="tile {{ tile_class }}" style="{{ style }}">
+            <p><span>{{ name }}</span></p>
+            <h4><i class="{{ fa_class }}"></i>
+              <span>{{ value }}</span>
+            </h4>
+        </div>
+    </div>
+</a>
+{% endmacro %}

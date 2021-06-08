@@ -1,0 +1,29 @@
+<div class="card__standard">
+  <h5 class="card__standard_headline">Click to show the modal</h5>
+  <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+    Show modal
+  </button>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Approve Manual Work</h5>
+        <span class="material-icons close" data-dismiss="modal">close</span>
+      </div>
+      <div class="modal-body">
+        <p>You have chosen to suspend your subscription quantity.
+          This subscription will automatically expire if you don't reactivate before the expiry date.</p>
+        <p>Would you like to proceed?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary mr-15" data-dismiss="modal"><i class="fa fa-check"></i>Approve</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
