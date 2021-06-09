@@ -135,6 +135,15 @@ img.responsive {
   border: 3px dashed greenyellow;
 }
 
+.border-blue {
+  border: 3px dashed blue;
+}
+
+.border-orange {
+  border: 3px dashed orange;
+}
+
+
 .margin-0 {
   margin: 0%;
   padding: 0%;
@@ -212,3 +221,9 @@ img.responsive {
   }
 
 } */
+
+#nav_search {
+  width: 80%;
+  margin: 0 auto;
+  border: 2px dashed red;
+}

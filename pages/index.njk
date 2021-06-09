@@ -10,8 +10,8 @@
   {% endblock %}
 </head>
 <body>
-<div class="shell-container">
-  <div class="content-container"></div>
+<div>
+
   {# top menu #}
   {% include "./page_components/menus/_menu_top_marketplace.njk" %}
 
@@ -28,6 +28,7 @@
         <div class="card">
 
           {% block content %}
+
             {# any content goes here #}
             {% include "partials/_welcome.njk" %}
 
