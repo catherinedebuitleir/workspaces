@@ -170,5 +170,14 @@ $(document).ready(function () {
         $("#sub-menu-3").hide();
     });
 
+    // show the side menu
+    $("#menu-button").hover(function () {
+        $(".shell-menu").show();
+    });
+
+    $("#side-menu").mouseleave(function(){
+        $("#side-menu").hide();
+      });
+
 });
 
