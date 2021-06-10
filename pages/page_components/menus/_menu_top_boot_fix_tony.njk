@@ -1,94 +1,102 @@
 <nav class="navbar navbar-expand navbar-light bg-light flex-column flex-md-row bd-navbar" id="top-bar">
-  <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap" id="menu-button">
+  <a class="navbar-brand mr-20" href="/" aria-label="Bootstrap" id="menu-button">
     <span class="material-icons">menu</span>
   </a>
 
-  {# <section class="navbar-brand">
-    <button class="btn top-section__item__link button__shadow" href="index.html">
-      <i class="fa fa-caret-down fa-lg" style="margin: 0px 0px 0px 12px;"></i>
-      <span id="siteurl">
-        <span id="siteurlred"> Marketplace.</span>SoftwareONE<span id="siteurlgray">.com  </span></span>
-    </button>
-    <div class="">
-      <ul class="">
-        <li class="">
-          <a class="btn btn-light" href="index_account.html" role="button">
-            <span id="siteurl">
-              <span>Account.</span>SoftwareONE<span id="siteurlgray">.com</span></a>
-          </a>
-        </li>
-        <li>
-          <a class="btn btn-light" href="index_assets.html" role="button">
-            <span id="siteurl">
-              <span>Assets.</span>SoftwareONE<span id="siteurlgray">.com</span></a>
-          </a>
-        </li>
-        <li>
-          <a class="btn btn-light" href="home.html" role="button">
-            <span id="siteurl">
-              <span>Cloud.</span>SoftwareONE<span id="siteurlgray">.com</span></a>
-          </a>
-        </li>
-
-        <li class="">
-          <a class="btn btn-light" href="index.html" role="button">
-            <span id="siteurl">
-              <span id="siteurlred">Marketplace.</span>SoftwareONE<span id="siteurlgray">.com</span>
-              <i class="fa fa-check-circle" style="margin: 0px 0px 0px 6px;"></i>
-            </a>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section> #}
-  <div class="navbar-collapse collapse nav-content order-1 order-md-2 container border">
-    <ul class="navbar-nav flex-row mr-md-auto border-blue" >
-      <li class="nav-item">
+  <div class="navbar-collapse collapse nav-content order-1 order-md-2 container">
+    <ul class="navbar-nav dropdown" id="bd-versions" data-toggle="dropdown">
+      <li class="nav-item dropdown" id="domain-drop" style="margin-bottom: 5px;">
         <a class="nav-link" href="#">
           <span id="siteurl">
             <span id="siteurlred">Marketplace.</span>SoftwareONE<span id="siteurlgray">.com  </span></span>
         </a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="ml-auto navbar-collapse collapse nav-content order-2 order-md-2 container border-red mr-30">
-    <div class="input-group mb-3 input-main w-100">
-      <input type="text" class="form-control" placeholder="Search" aria-label="search" aria-describedby="basic-addon2">
-    </div>
-  </div>
-
-  <div class="ml-auto navbar-collapse collapse nav-content order-3 order-md-3 container border-orange">
-    <ul class="navbar-nav flex-row ml-md-auto border-blue">
-      <li class="nav-item dropdown">
-        <button class="btn button__shadow av-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        v4.0
-      </button>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
-          <a class="dropdown-item" href="/docs/4.1/">Latest (v4.1.x)</a>
-          <a class="dropdown-item active" href="/docs/4.0/">v4.0.0</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="https://v4-alpha.getbootstrap.com/">v4 Alpha 6</a>
-          <a class="dropdown-item" href="https://getbootstrap.com/docs/3.3/">v3.3.7</a>
-          <a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a>
+        <div class="dropdown-menu" aria-labelledby="domain-drop" style="padding: 12px; min-width: 320px;">
+          <a class="btn btn-light" href="index_account.html" role="button" style="margin-bottom: 12px;">
+            <span id="siteurl">
+              <span>Account.</span>SoftwareONE<span id="siteurlgray">.com</span></a>
+          </a>
+          <a class="btn btn-light" href="index_assets.html" role="button" style="margin-bottom: 12px;">
+            <span id="siteurl">
+              <span>Assets.</span>SoftwareONE<span id="siteurlgray">.com</span></a>
+          </a>
+          <a class="btn btn-light" href="home.html" role="button" style="margin-bottom: 12px;">
+            <span id="siteurl">
+              <span>Cloud.</span>SoftwareONE<span id="siteurlgray">.com</span></a>
+          </a>
+          <button class="btn btn-light border" href="index.html" role="button">
+            <span id="siteurl">
+              <span id="siteurlred">Marketplace.</span>SoftwareONE<span id="siteurlgray">.com</span>
+              <i class="fa fa-check-circle" style="margin: 0px 0px 0px 6px;"></i>
+            </a>
+          </button>
         </div>
       </li>
-    </ul>
+    </li>
+  </ul>
+</div>
+
+<div class="ml-auto navbar-collapse collapse nav-content order-2 order-md-2 container mr-30">
+  <div class="input-group mb-3 input-main w-100">
+    <input type="text" class="form-control" placeholder="Search" aria-label="search" aria-describedby="basic-addon2">
   </div>
+</div>
+
+<div class="ml-auto navbar-collapse collapse nav-content order-3 order-md-3 container">
+  <ul class="navbar-nav flex-row ml-md-auto">
+    <li class="nav-item dropdown user" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button class="btn">
+        <span class="material-icons f-l mt-10" id="user_image">account_circle</span>
+        <span class="f-l">Reto Mayor<br>
+          <small class="f-l">My Account</small>
+        </span>
+      </button>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+        <ul class="user-menu-group">
+          <li class="user-menu-group__item">
+            <a href="my-profile.html">
+              <span
+                  class="material-icons">account_circle</span> My Account</a>
+          </li>
+          <li class="user-menu-group__item">
+            <a href="favorites.html">
+              <span
+                  class="material-icons">list</span> My Lists</a>
+          </li>
+        <div class="dropdown-divider"></div>
+          <li class="user-menu-group__item">
+            <a href="settings.html">
+              <span class="material-icons">settings</span>
+                Settings</a>
+          </li>
+          <li class="user-menu-group__item">
+            <a href="help.html">
+              <span class="material-icons">help_outline</span>
+                Help</a>
+          </li>
+        </ul>
+        <ul class="user-menu-group">
+          <li class="user-menu-group__item">
+            <a href="#">
+              <span class="material-icons">logout</span> Log out </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
 </nav>
 
 <nav>
-  <div class="shell-top-second">
-    <a class="btn btn-link menu" id="menu-button">
-      <span class="material-icons f-l">menu</span>
-      <p>Menu</p>
-    </a>
-    <a class="btn btn-link">Reserved Instances</a>
-    <a class="btn btn-link">Managed Services</a>
-    <a class="btn btn-link">Recommended</a>
-    <a class="btn btn-link">Buy It Again</a>
-    <a class="btn btn-link">Shopping Lists</a>
-    <a class="btn btn-link">Customer Services</a>
-  </div>
-
+<div class="shell-top-second">
+  <a class="btn btn-link menu" id="menu-button">
+    <span class="material-icons f-l">menu</span>
+    <p>Menu</p>
+  </a>
+  <a class="btn btn-link">Reserved Instances</a>
+  <a class="btn btn-link">Managed Services</a>
+  <a class="btn btn-link">Recommended</a>
+  <a class="btn btn-link">Buy It Again</a>
+  <a class="btn btn-link">Shopping Lists</a>
+  <a class="btn btn-link">Customer Services</a>
+</div>
 </nav>
