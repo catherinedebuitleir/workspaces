@@ -39,7 +39,7 @@ function scripts() {
 //  * Injects each page into main layout template. Use partials to specify global objects
 //  */
 function views() {
-  return gulp.src(paths_views_src)
+  return gulp.src([paths_views_src, '/pages/**/**/*.njk'])
     .pipe(nunjucks({
       path: ['pages/', 'public/'] // Public is required for SVG icons referrence
     }))
