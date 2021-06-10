@@ -1,174 +1,106 @@
-<header class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar border-green">
-  <a class="navbar-brand" href="#" data-abc="true">Marketplace</a>
-</a>
-  <div class="navbar-nav-scroll">
-    <ul class="navbar-nav bd-navbar-nav flex-row">
-      <li class="nav-item">
-        <a class="nav-link " href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="/docs/4.0/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Documentation</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link " href="/docs/4.0/examples/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Examples</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://themes.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');" target="_blank" rel="noopener">Themes</a>
-      </li>
+<nav class="navbar navbar-expand navbar-light bg-light flex-column flex-md-row bd-navbar" id="top-bar">
+  <a class="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
+    <span class="material-icons">menu</span>
+  </a>
+  <section class="navbar-brand">
+    <button class="btn top-section__item__link button__shadow" href="index.html">
+      <i class="fa fa-caret-down fa-lg" style="margin: 0px 0px 0px 12px;"></i>
+      <span id="siteurl">
+        <span id="siteurlred"> Marketplace.</span>SoftwareONE<span id="siteurlgray">.com  </span></span>
+    </button>
+    <div class="">
+      <ul class="">
+        <li class="">
+          <a class="btn btn-light" href="index_account.html" role="button">
+            <span id="siteurl">
+              <span>Account.</span>SoftwareONE<span id="siteurlgray">.com</span></a>
+          </a>
+        </li>
+        <li>
+          <a class="btn btn-light" href="index_assets.html" role="button">
+            <span id="siteurl">
+              <span>Assets.</span>SoftwareONE<span id="siteurlgray">.com</span></a>
+          </a>
+        </li>
+        <li>
+          <a class="btn btn-light" href="home.html" role="button">
+            <span id="siteurl">
+              <span>Cloud.</span>SoftwareONE<span id="siteurlgray">.com</span></a>
+          </a>
+        </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="https://expo.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');" target="_blank" rel="noopener">Expo</a>
+        <li class="">
+          <a class="btn btn-light" href="index.html" role="button">
+            <span id="siteurl">
+              <span id="siteurlred">Marketplace.</span>SoftwareONE<span id="siteurlgray">.com</span>
+              <i class="fa fa-check-circle" style="margin: 0px 0px 0px 6px;"></i>
+            </a>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <ul class="nav navbar-nav text-nowrap flex-row mx-md-auto order-1 order-md-2 container border" >
+    <li class="nav-item">
+      <a class="nav-link" href="#">Website Name</a>
+    </li>
+    <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target=".nav-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </ul>
+
+  <div class="ml-auto navbar-collapse collapse nav-content order-2 order-md-2 container border-red">
+    <ul class="ml-auto nav navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#">Rates</a>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+          <a class="dropdown-item" href="/docs/4.1/">Latest (v4.1.x)</a>
+          <a class="dropdown-item active" href="/docs/4.0/">v4.0.0</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://v4-alpha.getbootstrap.com/">v4 Alpha 6</a>
+          <a class="dropdown-item" href="https://getbootstrap.com/docs/3.3/">v3.3.7</a>
+          <a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a>
+        </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://blog.getbootstrap.com/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Blog');" target="_blank" rel="noopener">Blog</a>
+        <a class="nav-link" href="#">Help</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
       </li>
     </ul>
   </div>
-  <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
-    <li class="nav-item dropdown">
-      <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+  <div class="ml-auto navbar-collapse collapse nav-content order-3 order-md-3 container border-orange">
+    <ul class="navbar-nav flex-row ml-md-auto border-blue">
+      <li class="nav-item dropdown">
+        <button class="btn button__shadow av-item nav-link dropdown-toggle mr-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         v4.0
-      </a>
-      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
-        <a class="dropdown-item" href="/docs/4.1/">Latest (v4.1.x)</a>
-        <a class="dropdown-item active" href="/docs/4.0/">v4.0.0</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="https://v4-alpha.getbootstrap.com/">v4 Alpha 6</a>
-        <a class="dropdown-item" href="https://getbootstrap.com/docs/3.3/">v3.3.7</a>
-        <a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a>
-      </div>
-    </li>
-
-    <li class="nav-item">
-      <a class="nav-link p-2" href="https://github.com/twbs/bootstrap" target="_blank" rel="noopener" aria-label="GitHub"><svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 499.36" focusable="false"><title>GitHub</title></svg>
-</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link p-2" href="https://twitter.com/getbootstrap" target="_blank" rel="noopener" aria-label="Twitter"><svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 416.32" focusable="false"><title>Twitter</title></svg>
-</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link p-2" href="https://bootstrap-slack.herokuapp.com" target="_blank" rel="noopener" aria-label="Slack"><svg class="navbar-nav-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" focusable="false"><title>Slack</title><path fill="currentColor" d="M210.787 234.832l68.31-22.883 22.1 65.977-68.309 22.882z"></path></svg>
-</a>
-    </li>
-  </ul>
-
-  <a class="btn btn-bd-download d-none d-lg-inline-block mb-3 mb-md-0 ml-md-3" href="https://github.com/twbs/bootstrap/archive/v4.0.0.zip">Download</a>
-</header>
-
-{# shell-top is the whole menu #}
-<div class="border-blue" >
-  {# drop down domain menu #}
-  <nav class="navbar border-orange">
-    <a class="navbar-brand" href="#" data-abc="true">Marketplace</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse" id="" style="border: 1px solid red;">
-      <div class="" class="" style="padding-left: 5%;">
-        <section class="user top-section__item--separated">
-          <div class="input-group mb-3 input-main w-100">
-            <input type="text" class="form-control" placeholder="Search" aria-label="search" aria-describedby="basic-addon2">
-          </div>
-        </section>
-      </div>
-    </div>
-  </nav>
-  <div class="shell-user f-l" class="shell-notifications top-section__item" style="padding-left: 5%;">
-    <section class="user top-section__item--separated">
-      <div class="input-group mb-3 input-main w-100">
-        <input type="text" class="form-control" placeholder="Search now" aria-label="search" aria-describedby="basic-addon2">
-      </div>
-    </section>
+      </button>
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+          <a class="dropdown-item" href="/docs/4.1/">Latest (v4.1.x)</a>
+          <a class="dropdown-item active" href="/docs/4.0/">v4.0.0</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://v4-alpha.getbootstrap.com/">v4 Alpha 6</a>
+          <a class="dropdown-item" href="https://getbootstrap.com/docs/3.3/">v3.3.7</a>
+          <a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a>
+        </div>
+      </li>
+    </ul>
   </div>
-
-  <div class="shell-user" class="shell-notifications top-section__item">
-    <section class="user top-section__item--separated">
-      <a class="top-section__item__link button__shadow" href="notifications.html">
-        <span class="material-icons">notifications_none</span>
-      </a>
-      <div class="user-menu dropdown-menu-right notifications">
-        <h6 class="dropdown-header">Notifications</h6>
-        <div class="dropdown-divider"></div>
-        <ul class="user-menu-group">
-          <li class="user-menu-group__item">
-            <p>Tango-US subscription <b>Microsoft Exchange Online (Plan 1)</b> successfully provisioned.</p>
-            <p>
-              <small>1h</small>
-            </p>
-          </li>
-          <div class="dropdown-divider"></div>
-          <li class="user-menu-group__item">
-            <p>Paul O'Connor placed <b>Order OR106211</b> of 2 items for Tango-US.</p>
-            <p>
-              <small>1h</small>
-            </p>
-          </li>
-          <div class="dropdown-divider"></div>
-          <li class="user-menu-group__item">
-            <p>The domain tango.microsoft.com was added.</p>
-            <p>
-              <small>1h</small>
-            </p>
-          </li>
-          <div class="dropdown-divider"></div>
-          <button class="mdc-button btn-block" onclick="location.href = 'notifications.html';">
-            <div class="mdc-button__ripple"></div>
-            <span class="mdc-button__label">View All</span>
-          </button>
-        </ul>
-      </div>
-    </section>
+</nav>
+<nav>
+  <div class="shell-top-second">
+    <a class="btn btn-link menu" id="menu-button">
+      <span class="material-icons f-l">menu</span>
+      <p>Menu</p>
+    </a>
+    <a class="btn btn-link">Reserved Instances</a>
+    <a class="btn btn-link">Managed Services</a>
+    <a class="btn btn-link">Recommended</a>
+    <a class="btn btn-link">Buy It Again</a>
+    <a class="btn btn-link">Shopping Lists</a>
+    <a class="btn btn-link">Customer Services</a>
   </div>
-
-  <div class="shell-user" class="shell-notifications top-section__item">
-    <section class="user top-section__item--separated">
-      <a class="top-section__item__link button__shadow" href="shopping_cart.html">
-        <span class="material-icons">shopping_cart</span>
-      </a>
-      <div class="user-menu dropdown-menu-right notifications">
-        <h6 class="dropdown-header">Items 1</h6>
-        <div class="dropdown-divider"></div>
-        <ul class="user-menu-group">
-          <li class="user-menu-group__item">
-            <p>
-              <b>Microsoft 365 Business</b>
-            </p>
-            <p>
-              <small class="mr-15">Qty 1</small>
-              <small>16.50 USD</small>
-            </p>
-          </li>
-          <div class="dropdown-divider"></div>
-          <li class="user-menu-group__item w-100">
-            <p class="w-100">Subtotal <b class="ta-r">16.50 USD</b>
-            </p>
-          </li>
-          <div class="dropdown-divider"></div>
-          <button class="mdc-button--outlined ml-15 mt-5" onclick="location.href = 'shopping_cart.html';">
-            <a class="mdc-button__label">View Cart</a>
-          </button>
-          <button class="mdc-button--raised f-r mr-15 mt-5" onclick="location.href = 'checkout-address.html';">
-            <a class="mdc-button__label">Checkout</a>
-          </button>
-        </ul>
-      </div>
-    </section>
-  </div>
-
-</div>
-<div class="shell-top-second">
-  <a class="btn btn-link menu" id="menu-button">
-    <span class="material-icons f-l">menu</span>
-    <p>Menu</p>
-  </a>
-  <a class="btn btn-link">Reserved Instances</a>
-  <a class="btn btn-link">Managed Services</a>
-  <a class="btn btn-link">Recommended</a>
-  <a class="btn btn-link">Buy It Again</a>
-  <a class="btn btn-link">Shopping Lists</a>
-  <a class="btn btn-link">Customer Services</a>
-</div>
-
-</div>
-</div>
+</nav>
