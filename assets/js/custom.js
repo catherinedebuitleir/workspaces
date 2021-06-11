@@ -172,11 +172,13 @@ $(document).ready(function () {
 
     // show the side menu
     $("#menu-button").hover(function () {
+        $("#menu-button").css({"color" : "#1A73E8"})
         $(".shell-menu").show();
     });
 
     $("#side-menu").mouseleave(function(){
         $("#side-menu").hide();
+        $("#menu-button").removeAttr('style');
       });
 
 });
