@@ -173,7 +173,7 @@ $(document).ready(function () {
     // show the side menu
     $("#menu-button").hover(function () {
         $("#menu-button").css({"color" : "#1A73E8"})
-        $(".shell-menu").show();
+        $(".shell-menu").show(250);
     });
 
     $("#side-menu").mouseleave(function(){
