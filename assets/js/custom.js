@@ -64,7 +64,7 @@ $(document).ready(function () {
     });
 
     $("#dropdown-menu-one").click(function(){
-        $("#sub-menu-one").slideToggle("slow");
+        $("#sub-menu-one").toggle("slow");
         $("#sub-menu-2").hide();
         $("#sub-menu-1").hide();
         $("#sub-menu-3").hide();
@@ -73,7 +73,7 @@ $(document).ready(function () {
     });
 
     $("#dropdown-menu-0").click(function(){
-        $("#sub-menu-0").slideToggle("slow");
+        $("#sub-menu-0").toggle("slow");
         $("#sub-menu-one").hide();
         $("#sub-cost").hide();
         $("#sub-menu-1").hide();
@@ -84,7 +84,7 @@ $(document).ready(function () {
     });
 
     $("#dropdown-menu-1").click(function(){
-        $("#sub-menu-1").slideToggle("slow");
+        $("#sub-menu-1").toggle("slow");
         $("#sub-menu-2").hide();
         $("#sub-cost").hide();
         $("#sub-util").hide();
@@ -97,7 +97,7 @@ $(document).ready(function () {
     });
 
     $("#dropdown-menu-2").click(function(){
-        $("#sub-menu-2").slideToggle("slow");
+        $("#sub-menu-2").toggle("slow");
         $("#sub-menu-one").hide();
         $("#sub-cost").hide();
         $("#sub-util").hide();
@@ -110,7 +110,7 @@ $(document).ready(function () {
     });
 
     $("#dropdown-menu-3").click(function(){
-        $("#sub-menu-3").slideToggle("slow");
+        $("#sub-menu-3").toggle("slow");
         $("#sub-menu-one").hide();
         $("#sub-cost").hide();
         $("#sub-util").hide();
@@ -123,7 +123,7 @@ $(document).ready(function () {
     });
 
     $("#dropdown-menu-4").click(function(){
-        $("#sub-menu-4").slideToggle("slow");
+        $("#sub-menu-4").toggle("slow");
         $("#sub-menu-one").hide();
         $("#sub-cost").hide();
         $("#sub-util").hide();
@@ -136,7 +136,7 @@ $(document).ready(function () {
     });
 
     $("#dropdown-integrate").click(function(){
-        $("#sub-integrate").slideToggle("slow");
+        $("#sub-integrate").toggle("slow");
         $("#sub-cost").hide();
         $("#sub-menu-one").hide();
         $("#sub-util").hide();
@@ -148,7 +148,7 @@ $(document).ready(function () {
     });
 
     $("#dropdown-cost").click(function(){
-        $("#sub-cost").slideToggle("slow");
+        $("#sub-cost").toggle("slow");
         $("#sub-integrate").hide();
         $("#sub-util").hide();
         $("#sub-menu-one").hide();
@@ -160,7 +160,7 @@ $(document).ready(function () {
     });
 
     $("#dropdown-util").click(function(){
-        $("#sub-util").slideToggle("slow");
+        $("#sub-util").toggle("slow");
         $("#sub-integrate").hide();
         $("#sub-cost").hide();
         $("#sub-menu-one").hide();
