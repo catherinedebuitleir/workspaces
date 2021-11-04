@@ -1,0 +1,239 @@
+
+
+ <div class="card__standard" style="height:1000px;">
+
+      <div class="row ">
+          <div class="col-md-12">
+         <div href="#">
+  
+  <div class="row filters">
+    <div class="col-lg-3">
+      <label for="sel1" style="width: 100%;">Search</label>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Rules" aria-label="search"
+          aria-describedby="basic-addon2">
+      </div>
+    </div>
+
+    <div class="col-lg-3">
+       <div class="form-group">
+    <label for="sel1" style="width: 100%;">Filter by</label>
+    <select class="form-control" style="padding:0px 10px" id="sel1" placeholder="-Any-">
+      <option selected value="" class="placeholder">-Any-</option>
+      <option value="1">AWS</option>
+      <option value="2">Azure</option>
+    </select>
+  </div>
+    </div>
+    <div class="col-lg-3">
+    </div>
+    <div class="col-lg-3 " style="align-self: center" >
+      <button class="mdc-button--raised f-r" onclick="window.location.href='create-rule.html'">
+        <a class="mdc-button__label">Create</a> 
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="well-plain-less gs-hoverDisabled" style="padding: 0px 10px" href="#">
+  <div class="row">
+
+    <div class="col-3">
+      <div class="mdc-checkbox">
+        <input type="checkbox" class="mdc-checkbox__native-control" onclick="billing_details()" />
+        <div class="mdc-checkbox__background">
+          <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+        <div class="mdc-checkbox__ripple"></div>
+      </div>
+    </div>
+    <div class="col-9 text-right">
+      <button type="button" class="btn btn-default" style="border:none"> Sort by <i
+          class="fa fa-chevron-down"></i></button>
+    </div>
+
+
+
+  </div>
+</div>
+
+<a href="../rules-overview.html" style="text-decoration:none">
+<div class="well-plain-less" href="rules-overview.html">
+  <div class="row">
+
+    <div class="col-sm-1 align-self-center  gs-col-list-custom">
+      <div class="mdc-checkbox">
+        <input type="checkbox" class="mdc-checkbox__native-control" onclick="billing_details()" />
+        <div class="mdc-checkbox__background">
+          <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+        <div class="mdc-checkbox__ripple"></div>
+      </div>
+    </div>
+    <div class="col-sm-1 align-self-center gs-col-list-custom2">
+      <div class="gs_azure-logo">
+      </div>
+    </div>
+    <div class="col-sm-9">
+      <h4><b>Start-Non-Prod Mongob env at 9am weekdays</b></h4>
+      <p><b>Azure -</b> Ran 1 months ago</p>
+    </div>
+  </div>
+</div></a>
+
+
+<a href="../rules-overview.html" style="text-decoration:none">
+<div class="well-plain-less" href="rules-overview.html">
+  <div class="row">
+
+    <div class="col-sm-1 align-self-center  gs-col-list-custom">
+      <div class="mdc-checkbox">
+        <input type="checkbox" class="mdc-checkbox__native-control" onclick="billing_details()" />
+        <div class="mdc-checkbox__background">
+          <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+        <div class="mdc-checkbox__ripple"></div>
+      </div>
+    </div>
+    <div class="col-sm-1 align-self-center gs-col-list-custom2">
+      <div class="gs_aws-logo">
+      </div>
+    </div>
+    <div class="col-sm-9">
+      <h4><b>Notify add service principal</b></h4>
+      <p><b>AWS -</b> Ran 2 months ago</p>
+    </div>
+
+  </div>
+</div></a>
+
+
+<a href="../rules-overview.html" style="text-decoration:none">
+<div class="well-plain-less" href="rules-overview.html">
+  <div class="row">
+
+    <div class="col-sm-1 align-self-center  gs-col-list-custom">
+      <div class="mdc-checkbox">
+        <input type="checkbox" class="mdc-checkbox__native-control" onclick="billing_details()" />
+        <div class="mdc-checkbox__background">
+          <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+        <div class="mdc-checkbox__ripple"></div>
+      </div>
+    </div>
+    <div class="col-sm-1 align-self-center gs-col-list-custom2">
+      <div class="gs_aws-logo">
+      </div>
+    </div>
+    <div class="col-sm-9">
+      <h4><b>Start-Non-Production ECS</b></h4>
+      <p><b>AWS -</b> Ran 2 months ago</p>
+    </div>
+
+  </div>
+</div></a>
+
+
+<a href="../rules-overview.html" style="text-decoration:none">
+<div class="well-plain-less" href="rules-overview.html">
+  <div class="row">
+
+    <div class="col-sm-1 align-self-center  gs-col-list-custom">
+      <div class="mdc-checkbox">
+        <input type="checkbox" class="mdc-checkbox__native-control" onclick="billing_details()" />
+        <div class="mdc-checkbox__background">
+          <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+        <div class="mdc-checkbox__ripple"></div>
+      </div>
+    </div>
+    <div class="col-sm-1 align-self-center gs-col-list-custom2">
+      <div class="gs_azure-logo">
+      </div>
+    </div>
+    <div class="col-sm-9">
+      <h4><b>Notify on password reset by admin</b></h4>
+      <p><b>Azure -</b> Ran 3 months ago</p>
+    </div>
+
+
+  </div>
+</div></a>
+
+
+<a href="../rules-overview.html" style="text-decoration:none">
+<div class="well-plain-less" href="rules-overview.html">
+  <div class="row">
+
+    <div class="col-sm-1 align-self-center  gs-col-list-custom">
+      <div class="mdc-checkbox">
+        <input type="checkbox" class="mdc-checkbox__native-control" onclick="billing_details()" />
+        <div class="mdc-checkbox__background">
+          <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+        <div class="mdc-checkbox__ripple"></div>
+      </div>
+    </div>
+    <div class="col-sm-1 align-self-center gs-col-list-custom2">
+      <div class="gs_azure-logo">
+      </div>
+    </div>
+    <div class="col-sm-9">
+      <h4><b>Notify on password reset</b></h4>
+      <p><b>Azure -</b> Ran 4 months ago</p>
+    </div>
+
+  </div>
+</div></a>
+
+<a href="../rules-overview.html" style="text-decoration:none">
+<div class="well-plain-less" href="rules-overview.html">
+  <div class="row">
+
+    <div class="col-sm-1 align-self-center  gs-col-list-custom">
+      <div class="mdc-checkbox">
+        <input type="checkbox" class="mdc-checkbox__native-control" onclick="billing_details()" />
+        <div class="mdc-checkbox__background">
+          <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59" />
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+        <div class="mdc-checkbox__ripple"></div>
+      </div>
+    </div>
+    <div class="col-sm-1 align-self-center gs-col-list-custom2">
+      <div class="gs_aws-logo">
+      </div>
+    </div>
+    <div class="col-sm-9">
+      <h4><b>Scale Sandbox RDS Test notification</b></h4>
+      <p><b>AWS -</b> Ran 5 months ago</p>
+    </div>
+
+  </div>
+</div></a>
+
+
+
+
+          </div>
+    </div>

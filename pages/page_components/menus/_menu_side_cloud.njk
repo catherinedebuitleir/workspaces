@@ -9,196 +9,255 @@ fa_icon, link and text. If you pass nothing, no problem default parameters.
 
 {% macro sub_menu(icon = "business", link = '#', text = "User Management", id = "User_Management") %}
 
-    <li id="{{id}}" class="main-menu__item"  href="{{link}}">
-        <a class="main-menu-action">
-            <span class="material-icons">
-                {{icon}}</span>
-            <span>
-                {{text}}
-            </span>
-        </a>
-    </li>
+<li id="{{id}}" class="main-menu__item" href="{{link}}">
+    <a class="main-menu-action">
+        <span class="material-icons">
+            {{icon}}</span>
+        <span>
+            {{text}}
+        </span>
+    </a>
+</li>
 
 {% endmacro %}
 
 {% macro sub_menu_parent(icon = "business", link = '#', text = "User Management", id = "User_Management") %}
 
-    <li id="{{id}}" class="main-menu__item" href="{{link}}">
-        <a class="main-menu-action">
-            <span class="material-icons">
-                {{icon}}</span>
-            <span>
-                {{text}}
-            </span>
-            <span class="material-icons" style="padding-left: 10px"> chevron_right </span>
-        </a>
-    </li>
+<li id="{{id}}" class="main-menu__item" href="{{link}}">
+    <a class="main-menu-action">
+        <span class="material-icons">
+            {{icon}}</span>
+        <span>
+            {{text}}
+        </span>
+        <span class="material-icons" style="padding-left: 10px"> chevron_right </span>
+    </a>
+</li>
 
 {% endmacro %}
 
 {% macro sub_sub_menu( icon = "fa fa-shopping-cart",
               link = '#',
               text = "User Management" ) %}
-    <li class="sub-menu__item" style="color: black;">
-        <a href={{ link }} class="sub-menu-link">
-            {{ text }}
-        </a>
-    </li>
+<li class="sub-menu__item" style="color: black;">
+    <a href={{ link }} class="sub-menu-link">
+        {{ text }}
+    </a>
+</li>
 
 {% endmacro %}
 
-{% macro menu_line_divider() %}
 
-    <li class="main-menu__item main-menu-action line" style="width: 190px; height: 30px;"></li>
-
-{% endmacro %}
 
 {# menu macro ends here #}
 
-<div class="shell-menu" id="side-menu" style="display: none;">
+<div class="cloud-menu" id="side-menu">
 
-    <ul class="main-menu shell-menu-top">
+    <ul class="main-menu">
 
-        <li class="" href="#" id="closemenu">
-            <a class="main-menu-action">
-                <span class="material-icons">close</span>Close
-            </a>
-        </li>
 
-        {{ menu_line_divider() }}
+        <li class="main-menu__item main-menu-action" href="/workspace.html">
+            <div class="row" id="workspace-switcher">
+                <div class="col-md-2">
 
-        <li class="main-menu__item" href="/new-dashboard">
-            <a class="main-menu-action" href="home.html">
-                <span class="material-icons">home</span>
-                <span>Home</span>
-            </a>
-        </li>
-
-        <li class="main-menu__item" href="/new-dashboard">
-            <a class="main-menu-action" href="insights.html">
-                <span class="material-icons">lightbulb</span>
-                <span>Insights</span>
-            </a>
-        </li>
-
-        <li class="main-menu__item" href="/new-dashboard">
-            <a class="main-menu-action" href="real-time-events.html">
-                <span class="material-icons">feed</span>
-                <span>Events</span>
-            </a>
-        </li>
-
-        {{ menu_line_divider() }}
-
-        <li class="main-menu__item" href="/new-dashboard">
-            <a class="main-menu-action" href="rules.html">
-                <span class="material-icons">shield</span>
-                <span>Security</span>
-            </a>
-        </li>
-
-        <li class="main-menu__item" href="/new-dashboard">
-            <a class="main-menu-action" href="#" id="dropdown-cost">
-                <span class="material-icons">monetization_on</span>
-                <span>Cost</span>
-                <div class="f-r">
-                    <span class="material-icons ml-30">keyboard_arrow_right</span>
+                    <span class="square-initials">CT</span>
                 </div>
+                <div class="col-md-7" style="    top: -7px;">
+
+                    <span style="color:#1a73e8;font-weight:600;">Cloud Team</span>
+
+
+                    <br />
+
+                    <small> AdAstraflex </small>
+                </div>
+                <div class="col-md-1">
+                    <span class="material-icons">unfold_more</span>
+                </div>
+            </div>
+
+
+
+        </li>
+
+        <li class="main-menu__item main-menu-action line"></li>
+
+        <li class="main-menu__item main-menu-action separator ">
+            <span class="material-icons">home</span>
+
+
+            <a class="menu-label" href="home.html">
+                <span> Home</span>
+            </a>
+        </li>
+ 
+
+        <li class="main-menu__item main-menu-action separator " style="padding-top:20px;">
+            <span class="material-icons">monetization_on</span>
+            <a class="menu-label"  href="allocate.html">
+
+                <span> Spend</span>
+            </a>
+
+        </li>
+        <li class="main-menu__item" style="margin-left:30px;">
+            <a class="main-menu-action" href="allocate.html">
+
+                <span>Allocate</span>
             </a>
         </li>
 
-        <div class="sub-menu" id="sub-cost" style="display:none;">
 
-            <li class="main-menu__item" href="/new-dashboard">
-                <a class="main-menu-action" href=" ">
-                <span>Consumption</span>
+
+        <li class="main-menu__item" style="margin-left:30px;">
+            <a class="main-menu-action" href="analyze.html">
+
+
+                <span>Analyze</span>
+            </a>
+        </li>
+
+        <li class="main-menu__item" style="margin-left:30px;">
+            <a class="main-menu-action" href="chargeback.html">
+
+                <span>Chargeback</span>
+            </a>
+        </li>
+
+
+
+        <li class="main-menu__item main-menu-action separator" style="padding-top:20px;">
+            <span class="material-icons">smart_toy</span>
+         
+             <a class="menu-label"  href="rules.html">
+
+                <span> Automate</span>
+            </a>
+        </li>
+        <li class="main-menu__item" style="margin-left:30px;">
+            <a class="main-menu-action" href="rules.html">
+
+                <span>Rules</span>
+            </a>
+        </li>
+
+        <li class="main-menu__item" style="margin-left:30px;">
+            <a class="main-menu-action" href="event-tracking.html">
+
+                <span>Event Tracking</span>
+
+            </a>
+        </li>
+
+
+
+        <div style="position: absolute; bottom: 60px;">
+            <li class="main-menu__item main-menu-action line"></li>
+            <li class="main-menu__item" style="padding-bottom: 16px;">
+                <a class="main-menu-action" href="#" id="workspace-settings">
+                    <span class="material-icons">settings</span>
+                    <span>Workspace Settings</span>
+
                 </a>
             </li>
 
-            <li class="main-menu__item" href="/new-dashboard">
-                <a class="main-menu-action" href=" ">
-                <span>Budgets</span>
-                </a>
-            </li>
-
-        
-
-            <li class="main-menu__item" href="/new-dashboard">
-                <a class="main-menu-action" href=" ">
-                <span>Chargebacks</span>
-                </a>
-            </li>
         </div>
 
 
-        <li class="main-menu__item" href="/new-dashboard">
-            <a class="main-menu-action" href="#" id="dropdown-util">
-                <span class="material-icons">data_usage</span>
-                <span>Usage</span>
-                <div class="f-r">
-                    <span class="material-icons ml-30">keyboard_arrow_right</span></div>
+
+    </ul>
+
+</div>
+
+
+
+<div class="icon-menu" id="side-menu" style="display:none">
+
+    <ul class="main-menu">
+
+
+        <li class="main-menu__item main-menu-action" href="/workspace.html">
+            <div class="row" id="workspace-switcher">
+                <div class="col-md-2">
+
+                    <span class="square-initials">CT</span>
+                </div>
+                <div class="col-md-7" style="    top: -7px;">
+
+
+
+                    <br />
+
+
+                </div>
+
+            </div>
+
+
+
+        </li>
+
+        <li class="main-menu__item main-menu-action line-sm"></li>
+
+        <li class="main-menu__item main-menu-action separator">
+
+        </li>
+        <li class="main-menu__item mb-3">
+            <a class="main-menu-action">
+                <span class="material-icons">apps</span>
+
             </a>
         </li>
 
-        <div class="sub-menu" id="sub-util" style="display:none;">
-            <li class="main-menu__item" href="/new-dashboard">
-                <a class="main-menu-action" href=" ">
-                    <span>IaaS/PaaS utilization</span>
-                </a>
-            </li>
 
-            <li class="main-menu__item" href="/new-dashboard">
-                <a class="main-menu-action" href=" ">
-                <span>Reserved Instance</span>
-                </a>
-            </li>
 
-            <li class="main-menu__item" href="/new-dashboard">
-                <a class="main-menu-action" href=" ">
-                    <span>365 Analytics</span>
-                </a>
-            </li>
+        <li class="main-menu__item mb-3">
+            <a class="main-menu-action">
+                <span class="material-icons">pie_chart</span>
 
-    
-        </div>
 
-        {{ menu_line_divider() }}
-
-        <li class="main-menu__item" href="/new-dashboard">
-            <a class="main-menu-action" href="#" id="dropdown-menu-2">
-                <span class="material-icons">cloud</span>
-                <span>Allocation</span>
-                <div class="f-r">
-                <span class="material-icons ml-30">keyboard_arrow_right</span></div>
             </a>
         </li>
 
-        <div class="sub-menu" id="sub-menu-2" style="display: none;">
-            <li class="main-menu__item" href="/new-dashboard">
-                <a class="main-menu-action" href="resources.html">
-                    <span> Resources</span>
+        <li class="main-menu__item mb-3">
+            <a class="main-menu-action">
+                <span class="material-icons">wrap_text</span>
+
+            </a>
+        </li>
+
+
+
+        <li class="main-menu__item main-menu-action separator" style="padding-top:20px;">
+
+        </li>
+        <li class="main-menu__item mb-3">
+            <a class="main-menu-action">
+                <span class="material-icons">bolt</span>
+
+            </a>
+        </li>
+
+        <li class="main-menu__item mb-3">
+            <a class="main-menu-action">
+                <span class="material-icons">
+                    dialpad</span>
+
+
+            </a>
+        </li>
+
+
+
+        <div style="position: absolute; bottom: 60px;">
+            <li class="main-menu__item main-menu-action line-sm"></li>
+            <li class="main-menu__item" style="padding-bottom: 16px;">
+                <a class="main-menu-action" href="#" id="workspace-settings">
+                    <span class="material-icons">settings</span>
+
+
                 </a>
             </li>
-
-            <li class="main-menu__item" href="/new-dashboard">
-                <a class="main-menu-action" href="tags.html">
-                    <span>Tags</span>
-                </a>
-            </li>
-
-            <li class="main-menu__item" href="/new-dashboard">
-                <a class="main-menu-action" href="groups.html">
-                    <span>Custom Groups</span>
-                </a>
-            </li>
-
-            <li class="main-menu__item" href="/new-dashboard">
-                <a class="main-menu-action" href="rules.html">
-                    <span>Rules</span>
-                </a>
-            </li>
-
-       
 
         </div>
 

@@ -82,6 +82,58 @@
   transform: translateZ(0)
 }
 
+.cloud-menu {
+  padding: 20px 30px 30px 30px;
+  display: inline;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  height: 100%;
+  z-index: 99;
+  color: #fff;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0)
+}
+
+.icon-menu {
+  width: 60px;
+  padding: 20px 0px 0px 17px;
+  display: inline;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  height: 100%;
+  z-index: 99;
+  background: white;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0)
+}
+
+.separator {
+  font-size: 12px;
+  padding-left: 0px !important;
+
+}
+
+.cloud-menu .separator span {
+  font-weight: bold !important;
+}
+
+.cloud-menu:after {
+  content: "";
+  width: 251px;
+  padding: 84px 0 32px;
+
+  background-color: #ffffff;
+  height: 100%;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  color: #000;
+}
+
 .section__item__buttons {
   width: 300px;
   background-color: #fff;
@@ -93,7 +145,8 @@
 }
 
 
-.shell-menu:after {
+.shell-menu:after,
+.cloud-menu:after {
   content: "";
   width: 251px;
   padding: 84px 0 32px;
@@ -107,7 +160,22 @@
   background-color: #fff;
 }
 
-.shell-menu .logo {
+.icon-menu:after {
+  content: "";
+  /* width: 50px; */
+  /* padding: 84px 0 32px; */
+  box-shadow: 0 8px 16px 0 rgba(96, 97, 112, 0.16), 0 2px 4px 0 rgba(40, 41, 61, 0.04);
+  background-color: #ffffff;
+  height: 100%;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
+.shell-menu .logo,
+.cloud-menu .logo {
   width: 40px;
   top: -5px;
   display: flex;
@@ -121,15 +189,18 @@
   position: relative
 }
 
-.shell-menu .logo>svg {
+.shell-menu .logo>svg,
+.cloud-menu .logo>svg {
   width: 50px
 }
 
-.shell-menu .logo-section {
+.shell-menu .logo-section,
+.cloud-menu .logo-section {
   height: 65px;
 }
 
-.shell-menu .main-menu {
+.shell-menu .main-menu,
+.cloud-menu .main-menu {
   display: flex;
   height: calc(100% - 0px);
   flex-direction: column;
@@ -138,14 +209,16 @@
   list-style: none
 }
 
-.shell-menu .main-menu:after {
+.shell-menu .main-menu:after,
+.cloud-menu .main-menu:after {
   order: 1;
   flex-grow: 1;
   content: "";
   position: relative
 }
 
-.shell-menu .main-menu__item--to-end {
+.shell-menu .main-menu__item--to-end,
+.cloud-menu .main-menu__item--to-end {
   order: 2;
   color: #333840;
 }
@@ -164,8 +237,10 @@
   text-decoration: none;
 }
 
-.shell-menu .main-menu .main-menu-action {
-  height: 50px;
+.shell-menu .main-menu .main-menu-action,
+.cloud-menu .main-menu .main-menu-action {
+
+  padding: 8px;
   display: flex;
   cursor: pointer;
   position: relative;
@@ -174,22 +249,26 @@
   font-size: 14px;
 }
 
-.shell-menu .main-menu .mr-30 {
+.shell-menu .main-menu .mr-30,
+.cloud-menu .main-menu .mr-30 {
   margin-left: 90px;
 }
 
-.shell-menu .main-menu .sub-menu {
+.shell-menu .main-menu .sub-menu,
+.cloud-menu .main-menu .sub-menu {
   margin-top: -20px;
   margin-bottom: 20px;
   margin-left: 31px;
 }
 
-.shell-menu .main-menu .sub-menu .main-menu-action {
+.shell-menu .main-menu .sub-menu .main-menu-action,
+.cloud-menu .main-menu .sub-menu .main-menu-action {
   height: 35px;
   font-size: 13px;
 }
 
-.shell-menu .main-menu .main-menu-title {
+.shell-menu .main-menu .main-menu-title,
+.cloud-menu .main-menu .main-menu-title {
   margin-bottom: 30px;
   display: flex;
   cursor: pointer;
@@ -199,17 +278,20 @@
   font-size: 12px;
 }
 
-.shell-menu .main-menu .main-menu-action .material-icons {
+.shell-menu .main-menu .main-menu-action .material-icons,
+.cloud-menu .main-menu .main-menu-action .material-icons {
   font-size: 20px;
   padding-right: 12px;
   margin-top: 0px;
 }
 
-.shell-menu .main-menu .main-menu-action>span {
+.shell-menu .main-menu .main-menu-action>span,
+.cloud-menu .main-menu .main-menu-action>span {
   font-size: 14px
 }
 
-.shell-menu .main-menu .sub-section {
+.shell-menu .main-menu .sub-section,
+.cloud-menu .main-menu .sub-section {
   overflow-y: scroll;
   position: fixed;
   top: 65px;
@@ -239,22 +321,26 @@
 }
 
 .main-menu__item {
-  color: #fff;
+  color: #333840;
 }
 
-.shell-menu .main-menu .sub-section:hover {
+.shell-menu .main-menu .sub-section:hover,
+.cloud-menu .main-menu .sub-section:hover {
   z-index: 10;
 }
 
-.shell-menu .main-menu .sub-section .sub-menu-group {
+.shell-menu .main-menu .sub-section .sub-menu-group,
+.cloud-menu .main-menu .sub-section .sub-menu-group {
   margin-top: 30px
 }
 
-.shell-menu .main-menu .sub-section .sub-menu-group:first-child {
+.shell-menu .main-menu .sub-section .sub-menu-group:first-child,
+.cloud-menu .main-menu .sub-section .sub-menu-group:first-child {
   margin-top: 25px
 }
 
-.shell-menu .main-menu .sub-section .sub-menu-group__name {
+.shell-menu .main-menu .sub-section .sub-menu-group__name,
+.cloud-menu .main-menu .sub-section .sub-menu-group__name {
   padding: 0;
   margin: 0 0 10px 25px;
   font-size: 12px;
@@ -268,7 +354,8 @@
   list-style: none
 }
 
-.shell-menu .main-menu .sub-section .sub-menu__item {
+.shell-menu .main-menu .sub-section .sub-menu__item,
+.cloud-menu .main-menu .sub-section .sub-menu__item {
   padding-left: 10px;
   margin-left: 15px;
   width: 230px;
@@ -284,7 +371,8 @@
   background-color: #e6ebf1;
 }
 
-.shell-menu .main-menu .sub-section .sub-menu__item .sub-menu-link {
+.shell-menu .main-menu .sub-section .sub-menu__item .sub-menu-link,
+.cloud-menu .main-menu .sub-section .sub-menu__item .sub-menu-link {
   width: 100%;
   height: 40px;
   display: flex;
@@ -294,7 +382,9 @@
 }
 
 .shell-menu .main-menu .sub-section .sub-menu__item .sub-menu-link.active,
-.shell-menu .main-menu .sub-section .sub-menu__item .sub-menu-link:hover {
+.shell-menu .main-menu .sub-section .sub-menu__item .sub-menu-link:hover,
+.cloud-menu .main-menu .sub-section .sub-menu__item .sub-menu-link.active,
+.cloud-menu .main-menu .sub-section .sub-menu__item .sub-menu-link:hover {
   color: #5a616b;
   font-weight: 700;
   text-decoration: none
@@ -430,6 +520,16 @@
 .notifications .material-icons {
   font-size: 22px;
   color: #515151
+}
+
+.square-initials {
+  color: #ffffff;
+  background: #0271E0;
+  padding: 5px;
+  margin-right: 8px;
+  border-radius: 6px;
+
+
 }
 
 :host {
@@ -1358,7 +1458,19 @@ at 767px and less */
 
 .line {
   border-top: 1px solid #E0E5E8;
-  height: 30px;
+  width: 190px;
+  margin: 16px;
+  height: 1px;
+  padding: 0px !important;
+}
+
+.line-sm {
+  border-top: 1px solid #e0e5e8;
+  margin-right: -3px;
+  height: 1px;
+  padding: 6px;
+  width: 31px;
+  margin-top: 20px;
 }
 
 .navbar {

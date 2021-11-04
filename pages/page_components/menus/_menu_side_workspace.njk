@@ -1,0 +1,92 @@
+{# this is a macro, it's a little snippet of reusable nunjucks.
+
+Like a method that you can call: you can pass three parameters:
+fa_icon, link and text. If you pass nothing, no problem default parameters.
+
+{{ sub_menu( icon = 'business',
+             link="index.html",
+             text = "Hello Macro" ) }}  #}
+
+{% macro sub_menu(icon = "business", link = '#', text = "User Management", id = "User_Management") %}
+
+<li id="{{id}}" class="main-menu__item" href="{{link}}">
+    <a class="main-menu-action">
+        <span class="material-icons">
+            {{icon}}</span>
+        <span>
+            {{text}}
+        </span>
+    </a>
+</li>
+
+{% endmacro %}
+
+{% macro sub_menu_parent(icon = "business", link = '#', text = "User Management", id = "User_Management") %}
+
+<li id="{{id}}" class="main-menu__item" href="{{link}}">
+    <a class="main-menu-action">
+        <span class="material-icons">
+            {{icon}}</span>
+        <span>
+            {{text}}
+        </span>
+        <span class="material-icons" style="padding-left: 10px"> chevron_right </span>
+    </a>
+</li>
+
+{% endmacro %}
+
+{% macro sub_sub_menu( icon = "fa fa-shopping-cart",
+              link = '#',
+              text = "User Management" ) %}
+<li class="sub-menu__item" style="color: black;">
+    <a href={{ link }} class="sub-menu-link">
+        {{ text }}
+    </a>
+</li>
+
+{% endmacro %}
+
+
+
+{# menu macro ends here #}
+
+<div class="cloud-menu" id="side-menu">
+
+    <ul class="main-menu">
+
+
+        <li class="main-menu__item main-menu-action">
+            <div class="row">
+                <div class="col-md-2">
+                    <span class="square-initials">A</span>
+                </div>
+                <div class="col-md-7">
+
+                    AdAstraflex
+
+
+
+                </div>
+
+            </div>
+
+
+
+        </li>
+
+
+
+
+        <div style=" ">
+            <li class="main-menu__item main-menu-action line"></li>
+            <li class="main-menu__item" href="/new-dashboard" style="padding-bottom: 16px;">
+                <a class="main-menu-action" href="#" id="org_settings">
+                    <span class="material-icons">settings</span>
+                    <span>Organization Settings</span>
+
+                </a>
+            </li>
+    </ul>
+
+</div>

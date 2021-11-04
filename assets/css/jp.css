@@ -1,0 +1,441 @@
+.gs_azure-logo {
+    width: 36px;
+    height: 36px;
+    padding: 12px 6px 9px;
+    margin-left: 20px;
+    border-radius: 4px;
+    background-image: url("../images/azure_logo.png");
+    background-size: cover;
+  }
+  .gs_aws-logo {
+    width: 36px;
+    height: 36px;
+    margin-left: 20px;
+    padding: 12px 6px 9px;
+    border-radius: 4px;
+    background-image: url("../images/aws_logo.png");
+    background-size: cover;
+  }
+
+  .gs-col-list-custom{
+ 
+    max-width: .3%;
+  }
+  .gs-col-list-custom2{
+    max-width: 6.3%;
+  }
+  .gs-col-list-custom3{
+    max-width: 13%;
+  }
+
+  .gs-hoverDisabled{
+    pointer-events: none;
+ }
+
+ .gs-acc {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+  margin: 0 0 16px;
+  padding: 16px ​0px 16px 0px;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px 0 rgba(107, 113, 128, 0.2), 0 1px 16px 0 rgba(107, 113, 128, 0.1);
+}
+
+.gs-accordion .gs-acc-first {
+  border-left: 5px solid #0271e0;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-radius: .25rem;
+  margin: 0 0 16px;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px 0 rgba(107, 113, 128, 0.2), 0 1px 16px 0 rgba(107, 113, 128, 0.1);
+}
+
+
+.gs-card-header:first-child {
+  border-radius: calc(1.25rem - 1px) calc(1.25rem - 1px) 10px 10px;
+}
+.gs-card-header {
+  background-color: #fff;
+  padding: 16px;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.gs-card-body {
+  padding: 20px;
+}
+
+.gs-accordion.btn-link, .btn-link i{
+
+  margin-left: 20px;
+  margin-right: 16px;
+  align-self: center;
+  text-align: center;
+  margin-left: 16px;
+}
+
+.gs-acc-first button{
+  margin-left: -8px;
+}
+
+#accordion-break{
+  margin-left: -70px;
+}
+
+.gs-accordion .gs-card-body{
+  padding-left: 50px;
+  font-size: 14px;
+}
+
+.gs-acc-first button{
+  margin-left: -8px;
+}
+
+.gs-accordion .accordion-title{
+  display: flex;
+  align-self: center;
+}
+.gs-accordion .accordion-title.h4 .accordion-title.p{
+  margin-left: 16px;
+}
+
+.gs-acc i{
+  margin-left: 10px;
+}
+
+.gs-acc .accordion-title{
+  margin-left: -35px;
+}
+
+.icons-actions {
+  width: 40px;
+  height: 40px;
+  padding: 9px;
+  background-image: url("../images/icons_aws.png");
+  background-size: cover;
+}
+
+.icons-actions-2 {
+  width: 40px;
+  height: 40px;
+  padding: 9px;
+  background-image: url("../images/icons_graph.png");
+  background-size: cover;
+}
+.icons-actions-3 {
+  width: 40px;
+  height: 40px;
+  padding: 9px;
+  background-image: url("../images/icons_actions.png");
+  background-size: cover;
+}
+
+.gs-chips {
+  margin: 0 0 0 16px;
+  padding: 2px 8px 5px;
+  border-radius: 4px;
+  background-color: #e6f1fc;
+  height: 25px;
+  color: #014486;
+  align-self: flex-end;
+  font-size: 14px;
+}
+
+.gs-solid {
+  margin-top: 20px;
+  border-top: 1px solid #e0e5e8;
+}
+
+.gs-oval {
+  width: 15px;
+  height: 15px;
+  border: solid 2px #fff;
+  background-color: #6b7180;
+  border-radius: 50%;
+}
+
+ul.gs-list{
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+#config-list:first-child{
+  margin-top:0px;
+}
+#config-list{
+  margin-top: 32px;
+}
+
+#config-list li{
+  margin-bottom: 4px;
+  display:block;
+}
+
+.gs-table:hover{
+  background-color: #f6f8fa;
+  cursor: pointer;
+}
+.gs-table{
+  margin: 0;
+  width: 100%;
+}
+.gs-table td, .gs-table th {
+  border-top: none;
+  border-bottom: solid 1px #e0e5e8;
+  color: #272a2d;
+  vertical-align: middle!important;
+  word-wrap: normal;
+  font-size: 14px;
+}
+
+.gs-table td, .gs-table th {
+  padding: 20px 14px;
+  border-bottom: solid 1px #e0e5e8;
+  vertical-align: top;
+  border-top: none;
+}
+
+.slider-tabs.nav .gs-indicator {
+  position: absolute;
+  top: 16.7%;
+  min-width: 0;
+  height: 4px;
+  border-radius: 8px;
+  background: #0271e0;
+  transition: left .5s,width .5s;
+}
+.gs-indicator{
+  width: 125px;
+}
+#executions-tab.gs-indicator{
+  width: 125px;
+}
+
+.chartsavings {
+  width: 100%;
+  margin: 32px 0px;
+  height: 600px;
+  background: no-repeat;
+  background-image: url(../images/gs_savings_chart.png);
+}
+
+.chart-pausesavs {
+  width: 100%;
+  margin: 32px 0px;
+  height: 600px;
+  background: no-repeat;
+  background-image: url(../images/chart_pause.png);
+}
+.gs-slider.round {
+  border-radius: 20px;
+  width: 40px;
+  height: 22px;
+  margin-left: 44px;
+}
+input:checked+.slider {
+  background-color: #1a73e8;
+}
+
+.rules_selector {
+  width: 8px;
+  height: 50px;
+  margin: 0 31.8px 0 0;
+  border-radius: 4px;
+  background-color: #026ed9;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+input[type="checkbox"][id^="myCheckbox"] {
+  display: none;
+}
+
+.label-logos {
+  border: 1px solid #fff;
+  padding: 5px;
+  display: block;
+  position: relative;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.label-logos:before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid #1a73e8;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+.label-logos img {
+  height: 50px;
+  width: 50px;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+:checked + .label-logos {
+  border-color: #ddd;
+}
+
+:checked + .label-logos:before {
+  content: "✓";
+  background-color: #1a73e8;
+  transform: scale(1);
+  z-index: 1;
+  right: 55px;
+}
+
+:checked + .label-logos img {
+  transform: scale(0.9);
+  /* box-shadow: 0 0 5px #333; */
+  z-index: -1;
+}
+
+.gscard__standard_stepper_inactive {
+  border: 3px solid white;
+  padding: 28px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px 0 rgb(107 113 128 / 20%), 0 1px 16px 0 rgb(107 113 128 / 10%);
+  background-color: #fff;
+}
+.gscard__standard_stepper {
+  border: 3px solid #1a73e8;
+  padding: 28px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px 0 rgb(107 113 128 / 20%), 0 1px 16px 0 rgb(107 113 128 / 10%);
+  background-color: #fff;
+}
+
+.gscard__standard_stepper .gs-oval{
+  margin-top: 2px; 
+  width: 19px;
+  height: 18px;
+  background-color: #1a73e8;
+}
+
+.gscard__standard_stepper_inactive .gs-oval_info {
+  border: solid 2px #fff;
+  border-radius: 50%;
+  margin-top: 2px; 
+  width: 19px;
+  height: 18px;
+  background-color: #2a8b4f;
+}
+
+.gs_progress-bar{
+  position: absolute;
+    left: 67px;
+    top: 110px;
+    z-index: -1;
+  width: 4px;
+  height: 90px;
+  border-radius: 2px;
+  background-color: #026ed9;
+}
+
+ul.weekdays-list li{
+  font-size: 10px;
+  width: 22px;
+  padding: 4px;
+  margin-right: 8px;
+  background-color: F4F6F8;
+  text-align: center;
+  border-radius: 50%;
+}
+
+#gs-second-section {
+  display:none;
+}
+
+#gs-third-section {
+  display:none;
+}
+.gs_card_title{
+  font-size: 16px;
+  font-weight: bold;
+}
+.show-hidden-element{
+  display: block;
+}
+
+.wkcard__standard_stepper_inactive {
+  border: 3px solid white;
+  padding: 28px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px 0 rgb(107 113 128 / 20%), 0 1px 16px 0 rgb(107 113 128 / 10%);
+  background-color: #fff;
+}
+.wkcard__standard_stepper {
+  border: 3px solid #1a73e8;
+  padding: 28px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 16px;
+  box-shadow: 0 1px 3px 0 rgb(107 113 128 / 20%), 0 1px 16px 0 rgb(107 113 128 / 10%);
+  background-color: #fff;
+}
+
+.wkcard__standard_stepper .gs-oval{
+  margin-top: 2px; 
+  width: 19px;
+  height: 18px;
+  background-color: #1a73e8;
+}
+
+.wkcard__standard_stepper_inactive .gs-oval_info {
+  border: solid 2px #fff;
+  border-radius: 50%;
+  margin-top: 2px; 
+  width: 19px;
+  height: 18px;
+  background-color: #2a8b4f;
+}
+
+.wk_progress-bar{
+  position: absolute;
+    left: 67px;
+    top: 110px;
+    z-index: -1;
+  width: 4px;
+  height: 90px;
+  border-radius: 2px;
+  background-color: #026ed9;
+}

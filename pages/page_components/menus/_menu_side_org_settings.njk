@@ -1,0 +1,184 @@
+{# this is a macro, it's a little snippet of reusable nunjucks.
+
+Like a method that you can call: you can pass three parameters:
+fa_icon, link and text. If you pass nothing, no problem default parameters.
+
+{{ sub_menu( icon = 'business',
+             link="index.html",
+             text = "Hello Macro" ) }}  #}
+
+{% macro sub_menu(icon = "business", link = '#', text = "User Management", id = "User_Management") %}
+
+<li id="{{id}}" class="main-menu__item" href="{{link}}">
+    <a class="main-menu-action">
+        <span class="material-icons">
+            {{icon}}</span>
+        <span>
+            {{text}}
+        </span>
+    </a>
+</li>
+
+{% endmacro %}
+
+{% macro sub_menu_parent(icon = "business", link = '#', text = "User Management", id = "User_Management") %}
+
+<li id="{{id}}" class="main-menu__item" href="{{link}}">
+    <a class="main-menu-action">
+        <span class="material-icons">
+            {{icon}}</span>
+        <span>
+            {{text}}
+        </span>
+        <span class="material-icons" style="padding-left: 10px"> chevron_right </span>
+    </a>
+</li>
+
+{% endmacro %}
+
+{% macro sub_sub_menu( icon = "fa fa-shopping-cart",
+              link = '#',
+              text = "User Management" ) %}
+<li class="sub-menu__item" style="color: black;">
+    <a href={{ link }} class="sub-menu-link">
+        {{ text }}
+    </a>
+</li>
+
+{% endmacro %}
+
+
+
+{# menu macro ends here #}
+
+<div class="cloud-menu" id="side-menu">
+
+    <ul class="main-menu">
+
+
+        <li class="main-menu__item main-menu-action" href="/new-dashboard">
+            <div class="row">
+                <a href="workspace.html" style="padding-bottom:16px;"><span class="material-icons"
+                        style="color:#007bff;">
+                        arrow_back
+                    </span><span>Back</span></a>
+
+                <div class="col-md-12">
+
+                    <small> Organization Settings </small>
+                    <h4>Adastraflex</h4>
+
+                </div>
+
+            </div>
+
+
+
+        </li>
+
+        <li class="main-menu__item main-menu-action line"></li>
+
+
+        <li class="main-menu__item main-menu-action separator" style="padding-top:20px;">
+              <span class="material-icons">
+                    business
+                </span>
+            <span> General</span>
+        </li>
+
+        <li class="main-menu__item">
+            <a class="main-menu-action" href="org_overview.html"  style="margin-left:30px;">
+            
+                <span>Overview</span>
+            </a>
+        </li>
+
+
+
+        <li class="main-menu__item">
+            <a class="main-menu-action"  style="margin-left:30px;">
+              
+
+                <span>Workspaces</span>
+            </a>
+        </li>
+
+        <li class="main-menu__item">
+            <a class="main-menu-action"  style="margin-left:30px;">
+                
+                <span>Cloud Platforms</span>
+            </a>
+        </li>
+
+
+
+
+        <li class="main-menu__item">
+            <a class="main-menu-action"  style="margin-left:30px;">
+               
+                <span>Global Notifications</span>
+            </a>
+        </li>
+
+        <li class="main-menu__item">
+            <a class="main-menu-action"  style="margin-left:30px;">
+             
+                <span>Integrations</span>
+
+            </a>
+        </li>
+        <li class="main-menu__item">
+            <a class="main-menu-action"  style="margin-left:30px;">
+          
+                <span>Users</span>
+
+            </a>
+        </li>
+           <li class="main-menu__item main-menu-action separator" style="padding-top:20px;">
+               <span class="material-icons">
+                    receipt</span>
+            <span> Billing</span>
+        </li>
+        <li class="main-menu__item">
+            <a class="main-menu-action"  style="margin-left:30px;">
+      
+                <span>Plans</span>
+
+            </a>
+        </li>
+        <li class="main-menu__item">
+            <a class="main-menu-action"  style="margin-left:30px;">
+  
+                <span>Invoices</span>
+
+            </a>
+        </li>
+
+
+        <li class="main-menu__item main-menu-action separator" style="padding-top:20px;">
+                 <span class="material-icons">
+                    security</span>
+            <span> Security</span>
+        </li>
+        <li class="main-menu__item">
+            <a class="main-menu-action"  style="margin-left:30px;">
+    
+                <span>SSO</span>
+
+            </a>
+        </li>
+        <li class="main-menu__item">
+            <a class="main-menu-action"  style="margin-left:30px;">
+       
+                <span>Permissions</span>
+
+            </a>
+        </li>
+
+
+
+
+
+    </ul>
+
+</div>

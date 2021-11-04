@@ -1,0 +1,60 @@
+{# page variables #}
+{% set master_page_name = "Home" %}
+{% set page_actions = false %}
+
+{% set page_title = "Overview" %}
+
+{# page layout #}
+<head>
+  {% block header %}
+    {% include "./page_components/_head.html.njk" %}
+  {% endblock %}
+</head>
+<body>
+<div>
+
+{# top menu #}
+  {% include "./page_components/menus/_menu_top_cloud.njk" %}
+
+  {# this is the side menu #}
+  {% include "./page_components/menus/_menu_side_org_settings.njk" %}
+
+  <section class="gap"></section>
+  <div class="container col-md-9 offset-md-2">
+  <div class="shell-container">
+    <div class="content-container"></div>
+
+      <div class="row">
+            {# breadcrumb #}
+        <div id="breadcrumb" class="mb-10" style="padding-left: 0px; margin-top: 30px;">
+        <span class="youarehere"></span>
+        <span class="breadcrumb-text">
+          <a href="index.html" class="breadcrumb-active"></a>
+          <span class="breadcrumb-text">
+            <a href="workspace.html" class="breadcrumb-active">
+              {{master_page_name}}</a>/
+            <span class="breadcrumb-current-page">
+              {{page_title}}
+            </span>
+          </span>
+        </span>
+      </div>
+     {# breadcrumb #}
+      <!-- This is where the page begins -->
+        <div class="card">
+
+          {% block content %}
+
+            {# any content goes here #}
+              {% include "partials/_blank_page.njk"%}
+
+          {% endblock %}
+
+        </div>
+      </div>
+    </div>
+{# 
+    {% include "./page_components/_footer.html.njk" %} #}
+    {% include "./page_components/_scripts.html.njk" %}
+</div>
+</body>

@@ -1,0 +1,36 @@
+  <div class="card__standard" style="height:1000px;padding:">
+
+      <div class="row " style="top: -40px;position: relative;">
+          <div class="col-md-12">
+              <ul class="nav nav-tabs new-tabs slider-tabs" id="tabs" role="tablist" style="left: -30px;">
+           
+                  <li class="nav-item">
+                      <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                          aria-controls="profile" aria-selected="true">Cost centres</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab"
+                          aria-controls="messages" aria-selected="false">Allocate Rules</a>
+                  </li>
+                     <div class="indicator"></div>
+                 
+              </ul>
+
+              <div class="tab-content" style="top: -40px; ">
+                  {# <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab"> TEST </div> #}
+                  <div class="tab-pane active" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                   {% include "partials/_costcenters.html.njk" %} </div>
+                  <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">   
+                    {% include "partials/_allocate_rules_grid.html.njk" %} 
+           </div>
+           
+              </div>
+
+              {# <script>
+                  $(function () {
+                      $('#myTab li:last-child a').tab('show')
+                  })
+              </script> #}
+              </ul>
+          </div>
+      </div>

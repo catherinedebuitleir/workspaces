@@ -1,45 +1,65 @@
 {# page variables #}
-{% set master_page_location = "index.html" %}
-{% set master_page_name = "Home" %}
-{% set page_actions = false %}
+{% set page_title = "Cloud Team" %}
 
-{# page layout #}
+
 <head>
   {% block header %}
-    {% include "./page_components/_head.html.njk" %}
+  {% include "./page_components/_head.html.njk" %}
   {% endblock %}
 </head>
+
 <body>
-<div>
+  <div>
 
-  {# top menu #}
-  {% include "./page_components/menus/_menu_top_boot_fix_tony.njk" %}
+    {# top menu #}
+    {% include "./page_components/menus/_menu_top_cloud.njk" %}
 
-  {# this is the side menu #}
-  {% include "./page_components/menus/_menu_side_marketplace.njk" %}
+    {# this is the side menu #}
+    {% include "./page_components/menus/_menu_side_cloud.njk" %}
 
-  <section class="gap"></section>
-  <div class="container">
-  <div class="shell-container">
-    <div class="content-container"></div>
+    <section class="gap"></section>
+    <div class="container col-md-9 offset-md-2">
+      <div class="shell-container">
 
-      <div class="row">
-      <!-- This is where the page begins -->
-        <div class="card">
+        <div class="row">
+          <!-- This is where the page begins -->
+          <div class="card">
 
-          {% block content %}
+            {% block content %}
 
-            {# any content goes here #}
-            {% include "partials/_welcome.njk" %}
+             <div class="row">
+    <div class="col-sm-6">
+     <div id="breadcrumb" class="mb-10" style="padding-left: 0px; margin-top: 30px;">
+        <span class="youarehere"></span>
+        <span class="breadcrumb-text">
+          <a href="index.html" class="breadcrumb-active"></a>
+          <span class="breadcrumb-text">
 
-          {% endblock %}
-
-        </div>
+     
+            <span class="breadcrumb-current-page">
+              {{page_title}}
+            </span>
+          </span>
+        </span>
       </div>
     </div>
+   
+  </div>
+            {# any content goes here #}
+          
 
-    {% include "./page_components/_footer.html.njk" %}
-    {% include "./page_components/_scripts.html.njk" %}
-</div>
+ {# any content goes here #}
+          
+          <img src="images/workspace-home.png" alt="" style="width:100%">
+
+            {% endblock %}
+
+          </div>
+        </div>
+      </div>
+
+      {# {% include "./page_components/_footer.html.njk" %} #}
+
+    </div>
 </body>
-
+{% include "./page_components/_scripts.html.njk" %}

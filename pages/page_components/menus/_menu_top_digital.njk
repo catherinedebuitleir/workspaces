@@ -1,51 +1,50 @@
 <nav class="navbar navbar-expand navbar-light flex-column flex-md-row bd-navbar fixed-top" id="top-bar" >
   <div class="border ml-30 mr-30">
-    <a class="btn btn-link" id="menu-button">
+    <a class="btn btn-link" id="menu-button-cloud">
       <span class="material-icons f-l">menu</span>
     </a>
   </div>
 
   {# domain dropdown #}
 
-   <div class="navbar-collapse collapse nav-content order-1 order-md-2 container">
+  <div class="navbar-collapse collapse nav-content order-1 order-md-2 container">
     <ul class="navbar-nav dropdown" data-toggle="dropdown">
       <li class="nav-item dropdown" id="domain-drop" style="margin-bottom: 5px;">
         <button class="btn top-section__item__link button__shadow nav-link" href="#" >
         <i class="fa fa-caret-down fa-lg" style="margin: 3px 0px 0px 16px;"></i>
           <span id="siteurl">
-            <span id="siteurlred">Digital.</span>SoftwareONE<span id="siteurlgray">.com</span></span>
+            <span id="siteurlred">Cloud.</span>SoftwareONE<span id="siteurlgray">.com</span></span>
         </button>
         <div class="dropdown-menu" aria-labelledby="domain-drop" style="padding: 12px; min-width: 320px;">
-          <a class="btn btn-light" href="index_account.html" onclick="location.href = 'index_account.html';" role="button" style="margin-bottom: 12px;">
+          {# <a class="btn btn-light" href="index_account.html" onclick="location.href = 'index_account.html';" role="button" style="margin-bottom: 12px;">
               Account.SoftwareONE<span id="siteurlgray">.com</span>
-          </a>
-          <a class="btn btn-light" href="home.html" role="button" onclick="location.href = 'index_cloud.html';" style="margin-bottom: 12px;">
+          </a> #}
+          <a class="btn btn-light border" href="home.html" role="button" onclick="location.href = '/';" style="margin-bottom: 12px;">
             <span id="siteurl">
               Cloud.SoftwareONE<span id="siteurlgray">.com
             </span>
+              <i class="fa fa-check-circle" style="margin: 0px 0px 0px 6px;"></i>
           </a>
-          <a class="btn btn-light border" href="index_digital.html" onclick="location.href = 'index_digital.html';" role="button" style="margin-bottom: 12px;">
+          {# <a class="btn btn-light" href="index_digital.html" onclick="location.href = 'index_digital.html';" role="button" style="margin-bottom: 12px;">
             <span id="siteurl">
               Digital.SoftwareONE<span id="siteurlgray">.com</span>
             </span>
-            <i class="fa fa-check-circle" style="margin: 0px 0px 0px 6px;"></i>
-          </a>
-          <a class="btn btn-light" href="index.html" onclick="location.href = 'index.html';" role="button" >
+          </a> #}
+          <a class="btn btn-light" href="index.html" onclick="location.href = 'index_marketplace.html';" role="button" >
             <span id="siteurl">
               Marketplace.SoftwareONE<span id="siteurlgray">.com</span>
             </span>
-
           </a>
         </div>
       </li>
     </ul>
   </div>
 
-  <div class="ml-auto navbar-collapse collapse nav-content order-2 order-md-2 container mr-30">
+ {#  <div class="ml-auto navbar-collapse collapse nav-content order-2 order-md-2 container mr-30">
     <div class="input-group mb-3 input-main w-100">
       <input type="text" class="form-control" placeholder="Search" aria-label="search" aria-describedby="basic-addon2">
     </div>
-  </div>
+  </div> #}
 
   {# user and notifications menu section #}
 
@@ -98,9 +97,7 @@
     <div class="navbar-nav" href="shopping_cart.html" onclick="location.href = 'shopping_cart.html';">
       <div class="user top-section__item--separated mt-10" >
         <div class="shell-user top-section__item">
-          <button class="btn top-section__item__link button_shadow">
-            <span class="material-icons">shopping_cart</span>
-          </button>
+         
           <div class="user-menu dropdown-menu-right notifications">
             <h6 class="dropdown-header">Items 1</h6>
             <div class="dropdown-divider"></div>
@@ -141,36 +138,39 @@
             <small class="f-l">My Account</small>
           </span>
         </button>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions" style="    min-width: 15rem;
+">
           <ul class="user-menu-group">
             <li class="user-menu-group__item">
               <a href="my-profile.html" onclick="location.href = 'my-profile.html';">
                 <span
                   class="material-icons">account_circle</span> My Account</a>
             </li>
-            <li class="user-menu-group__item">
-              <a href="favorites.html">
-                <span
-                  class="material-icons">list</span> My Lists</a>
-            </li>
-            <div class="dropdown-divider"></div>
+         
             <li class="user-menu-group__item">
               <a href="settings.html" onclick="location.href = 'settings.html';">
                 <span class="material-icons">settings</span>
-                Settings</a>
+                User Settings</a>
+            </li>
+             <div class="dropdown-divider"></div>
+                 <li class="user-menu-group__item">
+              <a href="org_settings.html" onclick="location.href = 'settings.html';">
+                <span class="material-icons">settings</span>
+                Organization Settings</a>
             </li>
             <li class="user-menu-group__item">
               <a href="help.html" onclick="location.href = 'help.html';">
                 <span class="material-icons">help_outline</span>
                 Help</a>
             </li>
-          </ul>
-          <ul class="user-menu-group">
-            <li class="user-menu-group__item">
-              <a href="#">
+             <div class="dropdown-divider"></div>
+
+              <li class="user-menu-group__item">
+              <a href="" onclick="location.href = 'help.html';">
                 <span class="material-icons">logout</span> Log out </a>
             </li>
           </ul>
+          
         </div>
       </li>
     </ul>
@@ -179,7 +179,7 @@
 </nav>
 
 {# second menu #}
-
+{# 
 <nav>
   <div class="shell-top-second">
     <a class="btn btn-link mr-10">Reserved Instances</a>
@@ -189,4 +189,4 @@
     <a class="btn btn-link">Shopping Lists</a>
     <a class="btn btn-link">Customer Services</a>
   </div>
-</nav>
+</nav> #}

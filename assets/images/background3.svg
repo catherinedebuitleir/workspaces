@@ -1,0 +1,18 @@
+<svg width="341px" height="166px" viewBox="0 0 341 166" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-62ds_ug6w5-1" x="0" y="0" width="341" height="166" rx="8"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="blob-(1)">
+            <mask id="mask-62ds_ug6w5-2" fill="white">
+                <use xlink:href="#path-62ds_ug6w5-1"></use>
+            </mask>
+            <use id="Mask" fill="#FFFFFF" xlink:href="#path-62ds_ug6w5-1"></use>
+            <g id="Group" mask="url(#mask-62ds_ug6w5-2)" opacity="0.0469445219">
+                <g transform="translate(105.000000, -27.000000)" id="Mask">
+                    <path d="M185.717264,58.5194962 C206.697108,91.4731929 221.382999,131.499878 207.665409,158.827334 C193.786435,186.15479 151.665362,200.783016 107.446305,201.908264 C63.227248,203.194262 16.9102065,190.977282 3.99953291,164.132075 C-8.91114068,137.286869 11.5845536,95.8134359 34.8237661,61.734491 C58.0629786,27.4947964 83.7229423,0.649589894 110.351207,0.00659093489 C136.979471,-0.475658285 164.576036,25.5657996 185.717264,58.5194962 Z" fill="#AD3D99" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

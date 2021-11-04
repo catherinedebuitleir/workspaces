@@ -1,0 +1,300 @@
+<div class="row">
+
+  <div class="col-sm-4">
+    <div class="gscard__standard_stepper" id="gs_card_step1">
+      <div class="row">
+
+        <div class="col-sm-1">
+          <span class="material-icons material-icons-step1">
+            radio_button_unchecked
+          </span>
+
+        </div>
+        <div class="col-sm-10">
+
+          <p style="font-size: 16px;" id="gs_step1value"><b> Choose your context</b></p>
+          <p style="font-size: 14px;" id="gs_sub-text1">Set basic structure of rule</p>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="gscard__standard_stepper_inactive" id="gs_card_step2">
+      <div class="row">
+
+        <div class="col-sm-1">
+          <span class="material-icons material-icons-step2">
+            radio_button_unchecked
+          </span>
+        </div>
+        <div class="col-sm-10">
+
+          <p id="gs_main-text2" class="gs_action" style="font-size: 16px;"><b> Choose your action</b></p>
+          <p style="font-size: 14px;">Set event to be automated</p>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="gscard__standard_stepper_inactive" id="gs_card_step3">
+      <div class="row">
+
+        <div class="col-sm-1">
+          <span class="material-icons material-icons-step3">
+            radio_button_unchecked
+          </span>
+        </div>
+        <div class="col-sm-10">
+
+          <p id="gs_main-text3" class="gs_trigger" style="font-size: 16px;"><b>Add a trigger</b></p>
+          <p style="font-size: 14px;" id="gs_step3value">Set what start your actions</p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-8">
+    <div class="row">
+
+      {# step 1 #}
+        <div class="card__standard" id="gs_rule_step1">
+                <div class="row">
+                    <h4 class="col-sm-12" style="margin-bottom:16px"> Choose your context</h4>
+                <div class="col-sm-6">
+                    <label for="basic-url"><span class="required">*</span> Rule Name</label>
+                    <div class="input-group">
+                        <input id="gs_txt_name" type="text" class="form-control" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5" style="align-self: end; text-align:right;">
+                    <button onclick="document.getElementById('gs_sub-text1').innerHTML='All AWS Accounts and Regions'; document.getElementById('gs_main-text2').innerHTML='<b>Pause</b>'; " id="gs_finish_step1" class="btn btn-primary">
+                        <a class="mdc-button__label">Save context</a>
+                    </button>
+                </div>
+                </div>
+                <div class="gs-solid"></div>
+<div class="row">
+     <div class="col-sm-6" style="margin-top:16px;">
+                    <label for="basic-url"> <span class="required">*</span> labels </label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+        </div>
+<div class="row">
+    <h5 style="margin-top:32px; margin-left:16px; margin-bottom: 8px;"> Select Cloud Platform</h5>
+</div>
+    <div class="row">
+<div class="col-sm-6">
+<ul>
+  <li>
+    <input checked type="checkbox" id="myCheckbox1" />
+    <label class="label-logos" for="myCheckbox1"><img src="../images/aws_logo.png" /></label>
+  </li>
+  <li>
+
+    <input type="checkbox" id="myCheckbox2" />
+    <label class="label-logos" for="myCheckbox2"><img src="../images/azure_logo.png" /></label>
+  </li>
+
+</ul>    </div>
+    
+    </div>
+<div class="row">
+     <div class="col-sm-6">
+                    <label for="basic-url"><span class="required">*</span> Accounts</label>
+                    <select class="form-control" style="padding:0px 8px" id="sel1" placeholder="-Any-">
+      <option selected="" value="" class="placeholder">All AWS accounts</option>
+      <option value="1">Gorilla Stack Main</option>
+      <option value="2">Pre-prod</option>
+      <option value="3">Devops</option>
+      <option value="4">Prod</option>
+      <option value="5">Sandbox</option>
+    </select>
+                </div>
+                 </div>
+<div class="row" style="margin-top:16px;">
+     <div class="col-sm-6">
+                    <label for="basic-url"><span class="required">*</span> Regions</label>
+                    <select class="form-control" style="padding:0px 8px" id="sel1" placeholder="-Any-">
+      <option selected="" value="" class="placeholder">All AWS regions</option>
+      <option value="1">ap-northeast-1 (Tokyo)</option>
+      <option value="2">ap-northeast-2 (Seoul)</option>
+      <option value="3">ap-southe-1 (Mumbai)</option>
+      <option value="4">ap-southeast-1 (Singapore)</option>
+      <option value="5">ap-southeast-2 (Sydney)</option>
+      <option value="6">ca-central-1 (Central)</option>
+      <option value="7">eu-central-1 (Frankfurt)</option>
+      <option value="8">eu-north-1 (Stockholm)</option>
+    </select>
+                </div>
+                 </div>
+
+</div>
+
+
+      {# step 2 #}
+      <div class="card__standard" id="gs_rule_step2" style="display:none">
+        <div class="row">
+            <h4 class="col-sm-12" style="margin-bottom:16px"> Choose your action</h4>
+                <div class="col-sm-6">
+                    <div class="row">
+     <div class="col-sm-12">
+                    <label for="basic-url"> <span class="required">*</span> Action type </label>
+                   <select class="form-control" style="padding:0px 8px" id="targetaction" placeholder="-Any-">
+      <option selected="" value="" class="placeholder">Pause</option>
+      <option value="Pause">Pause</option>
+      <option value="Start EC Instances">Start EC Instances</option>
+      <option value="Stop EC Instances">Stop EC Instances</option>
+      <option value="User Defined Notifications">User Defined Notifications</option>
+      <option value="Notify on CLoudTrail">Notify on CLoudTrail</option>
+    </select>
+                </div>
+        </div>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5" style="align-self: end; text-align:right;">
+                    <button class="btn btn-default" href="create-rule.html">
+                        <a class="mdc-button__label">Cancel</a>
+                    </button>
+                    <button onclick="document.getElementById('gs_main-text3').innerHTML='<b>Schedule</b>'" id="gs_finish_step2" class="btn btn-primary" href="create-rule.html">
+                        <a class="mdc-button__label">Save action</a>
+                    </button>
+                </div>
+                </div>
+                <div class="gs-solid"></div>
+<div class="row">
+    <h5 style="margin-top:32px; margin-left:16px; margin-bottom: 8px;"> Approval Settings</h5>
+</div>
+    <div class="row">
+<div class="col-sm-6">
+     <label for="basic-url">Timeout</label>
+    <div class="input-group">
+<input class="form-control" type="time" id="appt" name="appt" min="09:00" max="18:00"  aria-describedby="basic-addon1" required>
+                       </div>
+</div>
+    
+    </div>
+
+<div class="row" style="margin-top: 20px;">
+<div class="col-sm-6">
+     <label for="basic-url">Default Behaviour Expiry</label>
+      <div class="row col-sm-5"> <div style="margin-right:4px; font-size: 14px;">Approve</div><div> <label class="switch"><input type="checkbox" checked=""><span class="slider round"></span></label></div></div>
+</div>
+    
+    </div>
+
+<div class="row" style="margin-top: 32px;">
+<div class="col-sm-6">
+     <label for="basic-url">Notifications</label>
+
+     <div class="row col-sm-12"> <div> 
+         <div class="mdc-checkbox" style="margin-left: -10px;">
+        <input type="checkbox" class="mdc-checkbox__native-control">
+        <div class="mdc-checkbox__background">
+          <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+            <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"></path>
+          </svg>
+          <div class="mdc-checkbox__mixedmark"></div>
+        </div>
+        <div class="mdc-checkbox__ripple"></div>
+      </div></div>
+      <div style="align-self: center; font-size: 14px;">Use notification defaults</div>
+     
+      </div>
+     
+      <p> </p>
+</div>
+    
+    </div>
+        </div>
+
+
+
+        {# step 3 #}
+        <div class="card__standard" id="gs_rule_step3" style="display:none">
+          <div class="row">
+              <h4 class="col-sm-12" style="margin-bottom:16px"> Add a trigger</h4>
+                <div class="col-sm-6">
+                    <div class="row">
+     <div class="col-sm-12">
+                    <label for="basic-url"> <span class="required">*</span> Trigger type </label>
+                   <select class="form-control targettrigger" style="padding:0px 8px" id="targettrigger" placeholder="-Any-">
+      <option selected="" value="" class="placeholder">Schedule</option>
+      <option value="Schedule">Schedule</option>
+      <option value="Cost Threshold">Cost Threshold</option>
+      <option value="Number of Instances Threshold">Number of Instances Threshold</option>
+      <option value="Detached Volumnes Detected">Detached Volumnes Detected</option>
+      <option value="CloudTrail Event">CloudTrail Event</option>
+      <option value="Inbound SNS Push">Inbound SNS Push</option>
+      <option value="Incoming Webhook">Incoming Webhook</option>
+      <option value="Manual Run Only">Manual Run Only</option>
+      <option value="PagerDuty Event">PagerDuty Event</option>
+    </select>
+                </div>
+        </div>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5" style="align-self: end; text-align:right;">
+                    <button class="btn btn-default" href="create-rule.html">
+                        <a class="mdc-button__label">Cancel</a>
+                    </button>
+                </div>
+                </div>
+                <div class="gs-solid"></div>
+
+    <div class="row">
+<div class="col-sm-2" style="margin-top: 16px;">
+     <label for="basic-url"><span class="required">*</span>Starts</label>
+    <div class="input-group" style="width:120px">
+<input class="form-control" type="time" id="appt" name="appt" min="09:00" max="18:00"  aria-describedby="basic-addon1" required>
+                       </div>
+</div>
+<div class="col-sm-6" style="margin-top: 48px;">
+<ul class="weekdays-list">
+    <li>M</li>
+    <li>T</li>
+    <li>W</li>
+    <li>T</li>
+    <li>F</li>
+    <li>S</li>
+    <li>S</li>
+</ul> 
+</div>
+
+    
+    </div>
+
+<div class="row" >
+<div class="col-sm-6" style="margin-top: 32px;">
+                    <label for="basic-url"> <span class="required">*</span> Timezone </label>
+                   <select class="form-control" style="padding:0px 8px" id="sel1" placeholder="-Any-">
+      <option selected="" value="" class="placeholder">(GMT+1) Europe/Dublin</option>
+      <option value="1">(GMT+10) Australia/Lindeman</option>
+    </select>
+                </div> </div>
+
+<div class="row" style="margin-top: 32px;">
+<div class="col-sm-12" style="margin-bottom: 32px;" >
+      <button type="button" class="btn btn-default" style="border:none"> <i class="fa fa-chevron-down"></i> Show advanced options </button>
+    </div>
+    <div class="col-sm-12">
+        <button class="btn-primary" style="width:100%" onclick="window.location.href='rules.html'">
+        <a class="mdc-button__label">Save rule</a> 
+      </button>
+      </div>
+
+    
+    </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  

@@ -1,0 +1,87 @@
+{# page variables #}
+{% set page_title = "Overview" %}
+{% set previous_page = "General" %}
+{% set team = "Cloud Team" %}
+
+
+{# page layout #}
+
+<head>
+  {% block header %}
+  {% include "./page_components/_head.html.njk" %}
+  {% endblock %}
+</head>
+
+<body>
+  <div>
+
+    {# top menu #}
+    {% include "./page_components/menus/_menu_top_cloud.njk" %}
+
+    {# this is the side menu #}
+    {% include "./page_components/menus/_menu_wspace_settings.njk" %}
+
+    <section class="gap"></section>
+    <div class="container col-md-9 offset-md-2">
+      <div class="shell-container">
+        <div class="content-container"></div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div id="breadcrumb" class="mb-10" style="padding-left: 0px; margin-top: 30px;">
+              <span class="youarehere"></span>
+              <span class="breadcrumb-text">
+                <a href="index.html" class="breadcrumb-active"></a>
+                <span class="breadcrumb-text">
+
+                  <a href="workspace_settings.html" class="breadcrumb-active">
+                    {{team}}</a>/
+
+                  <a href="workspace_settings.html" class="breadcrumb-active">
+                    {{previous_page}}</a>/
+                  <span class="breadcrumb-current-page">
+                    {{page_title}}
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+          {# {% include "partials/_page_actions.njk" %} #}
+        </div>
+
+        <div class="row">
+
+
+          {# breadcrumb #}
+
+          <!-- This is where the page begins -->
+
+          {# any content goes here #}
+          <div class="card">
+            {# any content goes here #}
+            <div class="card__standard credit_cards" style="height:1000px;">
+
+              <div class="row">
+                <div class="col-sm-12">
+                  {% block content %}
+
+                  {# any content goes here #}
+
+                  <img src="images/workspace-overview.png" alt="" style="width:100%">
+
+                  {% endblock %}
+
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+      {# {% include "./page_components/_footer.html.njk" %} #}
+      {% include "./page_components/_scripts.html.njk" %}
+    </div>
+</body>

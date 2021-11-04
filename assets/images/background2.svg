@@ -1,0 +1,20 @@
+<svg width="341px" height="166px" viewBox="0 0 341 166" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <rect id="path-4c285gzmhx-1" x="0" y="0" width="341" height="166" rx="8"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="blob-(1)">
+            <mask id="mask-4c285gzmhx-2" fill="white">
+                <use xlink:href="#path-4c285gzmhx-1"></use>
+            </mask>
+            <use id="Mask" fill="#FFFFFF" xlink:href="#path-4c285gzmhx-1"></use>
+            <g id="Group" mask="url(#mask-4c285gzmhx-2)" opacity="0.0469445219">
+                <g transform="translate(105.000000, -27.000000)" id="Mask">
+                    <g id="blob-(2)" transform="translate(35.000000, -31.000000)" fill="#0058C7" fill-rule="nonzero">
+                        <path d="M164.740441,62.0216371 C179.753259,92.3980067 180.476769,122.412753 174.507817,151.52344 C168.538865,180.634128 155.515698,208.840757 127.841467,231.984657 C100.167236,255.128558 57.661064,273.028919 33.4235022,259.106416 C9.00506316,245.183913 3.03611138,199.257735 0.865583463,160.744838 C-1.48582178,122.412753 0.142074157,91.1323247 16.0592789,60.5751434 C31.7956063,29.8371503 61.8212425,-0.358407526 91.3042467,0.00321592117 C120.787251,0.545651092 149.727623,31.4644558 164.740441,62.0216371 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

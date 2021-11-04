@@ -1,0 +1,49 @@
+{# page variables #}
+{% set master_page_location = "home.html" %}
+{% set master_page_name = "Home" %}
+{% set page_actions = false %}
+
+{# page layout #}
+
+<head>
+  {% block header %}
+  {% include "./page_components/_head.html.njk" %}
+  {% endblock %}
+</head>
+
+<body>
+  <div>
+
+    {# top menu #}
+    {% include "./page_components/menus/_menu_top_cloud.njk" %}
+
+    {# this is the side menu #}
+    {% include "./page_components/menus/_menu_side_org_settings.njk" %}
+
+    <section class="gap"></section>
+    <div class="container col-md-9 offset-md-2">
+      <div class="shell-container">
+
+        <div class="row">
+          <!-- This is where the page begins -->
+          <div class="card">
+
+            {% block content %}
+            {# any content goes here #}
+          
+
+ {# any content goes here #}
+              {% include "partials/_org_overview.html.njk"%}
+          
+
+            {% endblock %}
+
+          </div>
+        </div>
+      </div>
+
+      {# {% include "./page_components/_footer.html.njk" %} #}
+
+    </div>
+</body>
+{% include "./page_components/_scripts.html.njk" %}

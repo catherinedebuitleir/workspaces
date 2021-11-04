@@ -1,0 +1,74 @@
+{# page variables #}
+{% set page_title = "Create Allocation Rule" %}
+{% set previouspage = "Allocate" %}
+{% set team = "Cloud Team" %}
+
+
+{# page layout #}
+
+<head>
+  {% block header %}
+  {% include "./page_components/_head.html.njk" %}
+  {% endblock %}
+</head>
+
+<body>
+  <div>
+
+    {# top menu #}
+    {% include "./page_components/menus/_menu_top_cloud.njk" %}
+
+    {# this is the side menu #}
+     {% include "./page_components/menus/_menu_side_cloud.njk" %}
+
+    <section class="gap"></section>
+    <div class="container col-md-9 offset-md-2">
+      <div class="shell-container">
+        <div class="content-container"></div>
+
+        <div class="row">
+          <div class="col-sm-6">
+            <div id="breadcrumb" class="mb-10" style="padding-left: 0px; margin-top: 30px;">
+              <span class="youarehere"></span>
+              <span class="breadcrumb-text">
+                <a href="index.html" class="breadcrumb-active"></a>
+                <span class="breadcrumb-text">
+            
+                  <a href="workspace_settings.html" class="breadcrumb-active">
+                    {{team}}</a>/
+                         <a href="allocate.html" class="breadcrumb-active">
+                    {{previouspage}}</a>/
+
+                  <span class="breadcrumb-current-page">
+                    {{page_title}}
+                  </span>
+                </span>
+              </span>
+            </div>
+          </div>
+          {# {% include "partials/_page_actions.njk" %} #}
+        </div>
+
+        <div class="row">
+
+
+          {# breadcrumb #}
+
+          <!-- This is where the page begins -->
+          <div class="card">
+
+            {% block content %}
+
+            {# any content goes here #}
+            {% include "partials/_allocate_create_rule.html.njk"%}
+
+            {% endblock %}
+
+          </div>
+        </div>
+      </div>
+
+      {# {% include "./page_components/_footer.html.njk" %} #}
+      {% include "./page_components/_scripts.html.njk" %}
+    </div>
+</body>

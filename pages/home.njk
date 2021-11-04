@@ -1,0 +1,65 @@
+{# page variables #}
+{% set page_title = "Cloud Team" %}
+
+
+<head>
+  {% block header %}
+  {% include "./page_components/_head.html.njk" %}
+  {% endblock %}
+</head>
+
+<body>
+  <div>
+
+    {# top menu #}
+    {% include "./page_components/menus/_menu_top_cloud.njk" %}
+
+    {# this is the side menu #}
+    {% include "./page_components/menus/_menu_side_cloud.njk" %}
+
+    <section class="gap"></section>
+    <div class="container col-md-9 offset-md-2">
+      <div class="shell-container">
+
+        <div class="row">
+          <!-- This is where the page begins -->
+          <div class="card">
+
+            {% block content %}
+
+             <div class="row">
+    <div class="col-sm-6">
+     <div id="breadcrumb" class="mb-10" style="padding-left: 0px; margin-top: 30px;">
+        <span class="youarehere"></span>
+        <span class="breadcrumb-text">
+          <a href="index.html" class="breadcrumb-active"></a>
+          <span class="breadcrumb-text">
+
+     
+            <span class="breadcrumb-current-page">
+              {{page_title}}
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
+   
+  </div>
+            {# any content goes here #}
+          
+
+ {# any content goes here #}
+          
+          <img src="images/workspace-home.png" alt="" style="width:100%">
+
+            {% endblock %}
+
+          </div>
+        </div>
+      </div>
+
+      {# {% include "./page_components/_footer.html.njk" %} #}
+
+    </div>
+</body>
+{% include "./page_components/_scripts.html.njk" %}

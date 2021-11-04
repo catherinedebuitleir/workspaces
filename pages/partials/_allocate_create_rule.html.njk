@@ -1,0 +1,272 @@
+<div class="row">
+
+  <div class="col-sm-4">
+    <div class="gscard__standard_stepper" id="card_step1">
+      <div class="row">
+
+        <div class="col-sm-1">
+          <span class="material-icons material-icons-step1">
+            radio_button_unchecked
+          </span>
+
+        </div>
+        <div class="col-sm-8">
+
+          <p style="font-size: 16px;"><b> Rule name</b></p>
+          <p style="font-size: 14px;" id="step1value">Add a rule name</p>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="gscard__standard_stepper_inactive" id="card_step2">
+      <div class="row">
+
+        <div class="col-sm-1">
+          <span class="material-icons material-icons-step2">
+            radio_button_unchecked
+          </span>
+        </div>
+        <div class="col-sm-8">
+
+          <p style="font-size: 16px;"><b> Choose the costs to allocate</b></p>
+          <p style="font-size: 14px;">Select costs</p>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="gscard__standard_stepper_inactive" id="card_step3">
+      <div class="row">
+
+        <div class="col-sm-1">
+          <span class="material-icons material-icons-step3">
+            radio_button_unchecked
+          </span>
+        </div>
+        <div class="col-sm-8">
+
+          <p style="font-size: 16px;"><b>Choose cost centre</b></p>
+          <p style="font-size: 14px;" id="step3value">Pick where to allocate costs</p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-8">
+    <div class="row">
+
+      {# step 1 #}
+      <div class="card__standard" id="allocaterule_step1">
+        <div class="row">
+          <div class="col-sm-12">
+            <h3>Rule Name</h3>
+            <div class="gs-solid"></div>
+          </div>
+        </div>
+        <div class="row mt-30">
+          <div class="col-sm-6">
+            <label for="basic-url"><span class="required">*</span> Add rule name</label>
+            <div class="input-group">
+              <input type="text" id="txt_name" class="form-control" aria-describedby="basic-addon1">
+            </div>
+            <button class="btn btn-primary mt-30">
+              <a class="mdc-button__label" id="finish_step1">Continue</a>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      {# step 2 #}
+      <div class="card__standard" id="allocaterule_step2" style="display:none">
+        <div class="row">
+          <div class="col-sm-12">
+            <h3>Choose the costs to allocate</h3>
+            <div class="gs-solid"></div>
+          </div>
+        </div>
+        <div class="row mt-30">
+          <div class="col-sm-2">
+            <label for="basic-url">Filter</label>
+            <div class="input-group">
+
+              <select class="form-control" style="padding:0px 8px">
+                <option selected hidden>Property</option>
+                <option value="1">Subscription</option>
+                <option value="2">Resource group</option>
+                <option value="3">Provider</option>
+                <option value="4">Subscription ID</option>
+                <option value="5">Resource Type</option>
+              </select>
+
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+
+            <div class="input-group" style="margin-top: 28px;">
+
+              <select class="form-control" style="padding:0px 8px" id="sel1" placeholder="-Any-">
+                <option selected hidden>Operator</option>
+                <option value="1">Contains</option>
+                <option value="2">does not contain</option>
+                <option value="3">equals</option>
+
+              </select>
+
+            </div>
+          </div>
+          <div class="col-sm-3">
+
+            <div class="input-group" style="margin-top: 28px;">
+
+              <input type="text" class="form-control" aria-describedby="basic-addon1">
+
+            </div>
+          </div>
+          <div class="col-sm-1">
+            <button class="mdc-button mt-15" type="button" style="margin-top: 28px;">
+              <div class="mdc-button__ripple"></div>
+              <i class="material-icons mdc-button__icon" aria-hidden="true">tune</i>
+
+
+            </button>
+          </div>
+          <div class="col-sm-1">
+            <button class="mdc-button mt-15" type="button" style="margin-top: 28px;">
+              <div class="mdc-button__ripple"></div>
+              <i class="material-icons mdc-button__icon" aria-hidden="true">close</i>
+
+
+            </button>
+          </div>
+        </div>
+
+        <div style="display:none;" id="show_filter">
+          <div>
+            <div class="gs-chips" style="width: fit-content;margin-top: 8px; margin-left: 2px;">And</div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-2">
+
+              <div class="input-group" style="margin-top: 8px;">
+                <select class="form-control" style="padding:0px 8px">
+                  <option selected hidden>Property</option>
+                  <option value="1">Subscription</option>
+                  <option value="2">Resource group</option>
+                  <option value="3">Provider</option>
+                  <option value="4">Subscription ID</option>
+                  <option value="5">Resource Type</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="col-sm-2">
+
+              <div class="input-group" style="margin-top: 8px;">
+
+                <select class="form-control" style="padding:0px 8px" id="sel1" placeholder="-Any-">
+                  <option selected hidden>Operator</option>
+                  <option value="1">Contains</option>
+                  <option value="2">does not contain</option>
+                  <option value="3">equals</option>
+                </select>
+
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="input-group" style="margin-top: 8px;">
+                <input type="text" class="form-control" aria-describedby="basic-addon1">
+              </div>
+            </div>
+                <div class="col-sm-1">
+            <button class="mdc-button mt-15" type="button" style="margin-top: 8px;">
+              <div class="mdc-button__ripple"></div>
+              <i class="material-icons mdc-button__icon" aria-hidden="true">tune</i>
+
+
+            </button>
+          </div>
+          <div class="col-sm-1">
+            <button class="mdc-button mt-15" type="button" style="margin-top: 8px;">
+              <div class="mdc-button__ripple"></div>
+              <i class="material-icons mdc-button__icon" aria-hidden="true">close</i>
+
+
+            </button>
+          </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-5">
+            <button class="mdc-button mt-15" type="button" id="add_filter">
+              <div class="mdc-button__ripple"></div>
+              <i class="material-icons mdc-button__icon" aria-hidden="true"
+                data-md-tooltip="Add more filter">add_circle</i>
+              Add Filter
+
+            </button>
+          </div>
+          <div class="col-md-2" style="display:none;"  id="showtoggle">
+            <ul class="mt-15" style="display: flex; align-items: center;">
+              <li style="margin-right:5px">And</li>
+              <li style="margin-right:5px">
+                <label class="switch "><input type="checkbox" ><span class="slider round"></span></label>
+              </li>
+              <li>Or</li>
+          </div>
+        </div>
+        <div class="row mt-30">
+
+          <div class="col-sm-4">
+            <button class="btn btn-primary mt-30">
+              <a class="mdc-button__label" id="finish_step2">Continue</a>
+            </button>
+          </div>
+        </div>
+        </div>
+
+
+
+        {# step 3 #}
+        <div class="card__standard" id="allocaterule_step3" style="display:none">
+          <div class="row">
+            <div class="col-sm-12">
+              <h3>Choose cost centre</h3>
+              <div class="gs-solid"></div>
+            </div>
+          </div>
+          <div class="row mt-30">
+            <div class="col-sm-6">
+
+              <label for="basic-url">Cost centre</label>
+              <div class="input-group">
+
+                <select class="form-control" style="padding:0px 8px" id="step3_costcenter">
+                  <option selected hidden></option>
+                  <option value="EMEA">EMEA </option>
+                  <option value="EMEA > Marketing">EMEA > Marketing</option>
+                  <option value="EMEA > IT">EMEA > IT </option>
+                  <option value="EMEA > Finance">EMEA > Finance</option>
+                  <option value="NORAM">NORAM</option>
+                </select>
+
+              </div>
+
+              <button class="btn btn-primary mt-30" style="width:100%;" id="finish_allocation">
+                <a class="mdc-button__label" id="finish_step3" style="color:white;">Save Rule</a>
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>

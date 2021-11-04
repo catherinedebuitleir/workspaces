@@ -1,0 +1,383 @@
+<div class="row">
+
+  <div class="col-sm-4">
+    <div class="wkcard__standard_stepper" id="wk_card_step1">
+      <div class="row">
+ 
+        <div class="col-sm-1">
+          <span class="material-icons material-icons-step1">
+            radio_button_unchecked
+          </span>
+
+        </div>
+        <div class="col-sm-10">
+
+          <p style="font-size: 16px;" id="wk_step1value"><b> Choose Workspace Name</b></p>
+          <p style="font-size: 14px;" id="wk_sub-text1">Set basic structure of rule</p>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="wkcard__standard_stepper_inactive" id="wk_card_step2">
+      <div class="row">
+
+        <div class="col-sm-1">
+          <span class="material-icons material-icons-step2">
+            radio_button_unchecked
+          </span>
+        </div>
+        <div class="col-sm-10">
+
+          <p id="wk_main-text2" class="wk_action" style="font-size: 16px;"><b> Add Team mates</b></p>
+          <p style="font-size: 14px;">Set event to be automated</p>
+        </div>
+
+
+      </div>
+    </div>
+    <div class="wkcard__standard_stepper_inactive" id="wk_card_step3">
+      <div class="row">
+
+        <div class="col-sm-1">
+          <span class="material-icons material-icons-step3">
+            radio_button_unchecked
+          </span>
+        </div>
+        <div class="col-sm-10">
+
+          <p id="wk_main-text3" class="wk_trigger" style="font-size: 16px;"><b>Manage Capabilities</b></p>
+          <p style="font-size: 14px;" id="wk_step3value">Set what start your actions</p>
+        </div>
+
+
+      </div>
+    </div>
+        <div class="wkcard__standard_stepper_inactive" id="wk_card_step4">
+      <div class="row">
+
+        <div class="col-sm-1">
+          <span class="material-icons material-icons-step3">
+            radio_button_unchecked
+          </span>
+        </div>
+        <div class="col-sm-10">
+
+          <p id="wk_main-text3" class="wk_trigger" style="font-size: 16px;"><b>Link Accounts</b></p>
+          <p style="font-size: 14px;" id="wk_step3value">Set what start your actions</p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-8">
+    <div class="row">
+
+      {# step 1 #}
+      <div class="card__standard" id="wk_rule_step1">
+        <div class="row">
+          <h4 class="col-sm-12" style="margin-bottom:16px"> Choose Workspace Name</h4>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-sm-6">
+            <label for="basic-url"><span class="required">*</span> Workspace Name</label>
+            <div class="input-group">
+              <input id="wk_txt_name" type="text" class="form-control" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col-sm-1"></div>
+          <div class="col-sm-5" style="align-self: end; text-align:right;">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-8">
+            <p>Pick color workspace color</p>
+            <button style="border-radius: 100%; height: 40px; width: 40px; background-color: #026ed9" class="btn"
+              autofocus></button>
+            <button style="border-radius: 100%; height: 40px; width: 40px; background-color: #37bb69"
+              class="btn"></button>
+            <button style="border-radius: 100%; height: 40px; width: 40px; background-color: #f3bd48"
+              class="btn"></button>
+            <button style="border-radius: 100%; height: 40px; width: 40px; background-color: #f39ac1"
+              class="btn"></button>
+            <button style="border-radius: 100%; height: 40px; width: 40px; background-color: #7f45ad"
+              class="btn"></button>
+          </div>
+        </div>
+        <div class="row" style="margin-top:50px">
+          <div class="col">
+            <button
+              onclick="document.getElementById('wk_sub-text1').innerHTML='All AWS Accounts and Regions'; document.getElementById('wk_main-text2').innerHTML='<b>Pause</b>'; "
+              id="wk_finish_step1" class="btn btn-primary">
+              <a class="mdc-button__label">Next</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    {# step 2 #}
+    <div class="card__standard" id="wk_rule_step2" style="display:none">
+      <div class="row">
+        <h4 class="col-sm-12" style="margin-bottom:16px"> Add Team Mates</h4>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-9">
+          <label for="basic-url"> <span class="required"></span>Share Invite Link</label>
+          <div class="input-group">
+            <input type="text" style="width:300px;" class="form-control1" aria-label="Text input with dropdown button"
+              value="https://softwareone.com//share34153253523" placeholder="https://softwareone.com//share34153253523">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">admin</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Member</a>
+                <a class="dropdown-item" href="#">Read</a>
+                <a class="dropdown-item" href="#">Guest</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3" style="align-self: end; text-align:right;">
+          <button class="btn-default-light mt-30 float-right">
+            <a class="mdc-button__label" id="finish_step1">Copy</a>
+          </button>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-9">
+          <label for="basic-url"> <span class="required"></span>Add person or email address</label>
+          <div class="input-group">
+            <input type="text" style="width:300px;" class="form-control1" aria-label="Text input with dropdown button"
+              searchable="Search here..">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">admin</button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Member</a>
+                <a class="dropdown-item" href="#">Read</a>
+                <a class="dropdown-item" href="#">Guest</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3" style="align-self: end; text-align:right;">
+          <button class="btn-default-light mt-30 float-right">
+            <a class="mdc-button__label" id="finish_step1">Add</a>
+          </button>
+        </div>
+      </div>
+      <div class="gs-solid"></div>
+      <div class="row">
+      </div>
+      <div class="row mt-10">
+        <div class="col-sm-1">
+          <div class="circle profile-pic">
+
+          </div>
+        </div>
+        <div class="col-md-8">
+          Sarah Morris<br>
+          <span style="color:#6b7180"> sarah.morris@adastraflex.com</span>
+        </div>
+        <div class="col-md-3">
+          <div class="dropdown">
+            <button class="btn btn-outline dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Edit
+              <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">View</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Owner</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-10">
+        <div class="col-sm-1">
+          <div class="circle profile-pic-1">
+
+          </div>
+        </div>
+        <div class="col-md-8">
+          George Boots<br>
+          <span style="color:#6b7180"> george.boots@adastraflex.com</span>
+        </div>
+        <div class="col-md-3">
+          <div class="dropdown">
+            <button class="btn btn-outline dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Edit
+              <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">View</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Owner</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+              <div class="row" style="margin-top:50px">
+          <div class="col">
+            <button
+              onclick="document.getElementById('wk_sub-text1').innerHTML='All AWS Accounts and Regions'; document.getElementById('wk_main-text2').innerHTML='<b>Pause</b>'; "
+              id="wk_finish_step2" class="btn btn-primary">
+              <a class="mdc-button__label">Next</a>
+            </button>
+          </div>
+        </div>
+    </div>
+
+
+
+
+    {# step 3 #}
+    <div class="card__standard" id="wk_rule_step3" style="display:none">
+      <div class="row">
+        <h4 class="col-sm-12" style="margin-bottom:16px"> Manage Capabilities</h4>
+      </div>
+      <div class="well-plain-less" href="rules-overview.html">
+        <div class="row">
+          <div class="col-1 align-self-center gs-col-list-custom2">
+            <span id="material" class="material-icons">payment</span>
+          </div>
+          <div class="col-9">
+            <h4><b>Cost Allocation</b></h4>
+            <p>Identify, aggregate and assign costs</p>
+          </div>
+          <div class="col-1" style="align-self:center; margin-top:10px;"><label class="switch">
+              <input type="checkbox" checked=""><span class="slider round"></span></label></div>
+        </div>
+      </div>
+      <div class="well-plain-less" href="rules-overview.html">
+        <div class="row">
+          <div class="col-1 align-self-center gs-col-list-custom2">
+            <span id="material" class="material-icons">payment</span>
+          </div>
+          <div class="col-9">
+            <h4><b>Analytics</b></h4>
+            <p>For complete visibility in your cloud environment</p>
+          </div>
+          <div class="col-1" style="align-self:center; margin-top:10px;"><label class="switch">
+              <input type="checkbox" checked=""><span class="slider round"></span></label></div>
+        </div>
+      </div>
+      <div class="well-plain-less" href="rules-overview.html">
+        <div class="row">
+          <div class="col-1 align-self-center gs-col-list-custom2">
+            <span id="material" class="material-icons">payment</span>
+          </div>
+          <div class="col-9">
+            <h4><b>Chargebacks</b></h4>
+            <p>Upgrade to advanced or premium to unlock this feature</p>
+          </div>
+          <div class="col-1" style="align-self:center; margin-top:10px;"><label class="switch">
+              <input type="checkbox" checked=""><span class="slider round"></span></label></div>
+        </div>
+      </div>
+      <div class="well-plain-less" href="rules-overview.html">
+        <div class="row">
+          <div class="col-1 align-self-center gs-col-list-custom2">
+            <span id="material" class="material-icons">payment</span>
+          </div>
+          <div class="col-9">
+            <h4><b>Rules</b></h4>
+            <p>Automate Workflows</p>
+          </div>
+          <div class="col-1" style="align-self:center; margin-top:10px;"><label class="switch">
+              <input type="checkbox" checked=""><span class="slider round"></span></label></div>
+        </div>
+      </div>
+      <div class="well-plain-less" href="rules-overview.html">
+        <div class="row">
+          <div class="col-1 align-self-center gs-col-list-custom2">
+            <span id="material" class="material-icons">payment</span>
+          </div>
+          <div class="col-9">
+            <h4><b>Event Tracking</b></h4>
+            <p>Real Time events for instant observability</p>
+          </div>
+          <div class="col-1" style="align-self:center; margin-top:10px;"><label class="switch">
+              <input type="checkbox" checked=""><span class="slider round"></span></label></div>
+        </div>
+      </div>
+      <button id="wk_finish_step3" class="btn btn-primary">
+        <a class="mdc-button__label">Next</a>
+      </button>
+    </div>
+
+        {# step 4 #}
+    <div class="card__standard" id="wk_rule_step4" style="display:none">
+      <div class="row">
+        <h4 class="col-sm-12" style="margin-bottom:16px"> Link Accounts</h4>
+      </div>
+ <div class="row">
+<div class="col-sm-6">
+<ul>
+  <li>
+    <input checked="" type="checkbox" id="myCheckbox1">
+    <label class="label-logos" for="myCheckbox1"><img src="../images/aws_logo.png"></label>
+  </li>
+  <li>
+
+    <input type="checkbox" id="myCheckbox2">
+    <label class="label-logos" for="myCheckbox2"><img src="../images/azure_logo.png"></label>
+  </li>
+
+</ul>    </div>
+    
+    </div>
+    <div class="row">
+    <div class="col-sm-6">
+                    <label for="basic-url"><span class="required">*</span> Accounts</label>
+                    <select class="form-control" style="padding:0px 8px" id="sel1" placeholder="-Any-">
+      <option selected="" value="" class="placeholder">All AWS accounts</option>
+      <option value="1">Gorilla Stack Main</option>
+      <option value="2">Pre-prod</option>
+      <option value="3">Devops</option>
+      <option value="4">Prod</option>
+      <option value="5">Sandbox</option>
+    </select>
+                </div>
+                </div>
+                <div class = "row mt-15" >
+                    <div class="col-sm-6">
+                    <label for="basic-url"><span class="required">*</span>Regions</label>
+                    <select class="form-control" style="padding:0px 8px" id="sel1" placeholder="-Any-">
+      <option selected="" value="" class="placeholder">All AWS accounts</option>
+      <option value="1">Gorilla Stack Main</option>
+      <option value="2">Pre-prod</option>
+      <option value="3">Devops</option>
+      <option value="4">Prod</option>
+      <option value="5">Sandbox</option>
+    </select>
+                </div>
+                </div>
+                <div class = "row mt-15">
+                    <div class="col-sm-6">
+                    <label for="basic-url"><span class="required">*</span> Currency</label>
+                    <select class="form-control" style="padding:0px 8px" id="sel1" placeholder="-Any-">
+      <option selected="" value="" class="placeholder">All AWS accounts</option>
+      <option value="1">Gorilla Stack Main</option>
+      <option value="2">Pre-prod</option>
+      <option value="3">Devops</option>
+      <option value="4">Prod</option>
+      <option value="5">Sandbox</option>
+    </select>
+                </div>
+                </div>
+
+ <button class="btn-primary mt-15" style="width:100%" onclick="window.location.href='workspace.html'">
+        <a class="mdc-button__label">Save Workspace</a> 
+      </button>
+    </div>
+
+
+  </div>
+</div>
+</div>
+</div>

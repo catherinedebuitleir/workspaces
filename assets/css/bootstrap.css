@@ -4298,6 +4298,11 @@ fieldset[disabled] .btn-danger:hover {
     background-color: #fff
 }
 
+.btn-danger-light .badge {
+    color: #7d061a;
+    background-color: #f7e6e9;
+}
+
 .btn-link {
     font-weight: 400;
     color: #337ab7;
@@ -4445,7 +4450,7 @@ tbody.collapse.in {
     z-index: 1000;
     display: none;
     float: left;
-    min-width: 160px;
+    min-width: 14rem;
     padding: 5px 0;
     margin: 2px 0 0;
     font-size: 14px;
